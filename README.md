@@ -32,6 +32,9 @@ service zabbix-server restart
 @="C:\\winbox64.bat \"%1\" admin admin"
 ```
 * Por questões de segurança, ao salvar, será solicitado que salve em outra pasta, dessa forma, selecione a área de trabalho, e logo em seguida mova o arquivo para a pasta C:/
+
+![Arquivos dentro da Pasta](assets/img_3.png)
+
 * Dê um duplo clique no arquivo *winbox64.reg*, e confirme as alterações, essas configurações são nacessárias para que seu computador reconheça o Winbox como um protocolo, e irá abrir o arquivo .bat também presente na pasta.
 
 ![Registro do Windows](assets/img_2.png)
