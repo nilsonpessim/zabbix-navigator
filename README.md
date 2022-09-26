@@ -8,6 +8,7 @@
 
 ![Menu Mapa](assets/img.png)
 
+## :cyclone: Funcionalidades
 
 ## :cyclone: Arquivos do Zabbix
 * Antes de enviar os arquivos para o servidor, é importante realizar o backup do arquivo *menupopup.js*, presente na pasta /usr/share/zabbix/js. Este arquivo será substituído.
@@ -25,7 +26,6 @@ service zabbix-server restart
 ## :computer: Arquivos do Windows
 * Os arquivos são necessário para que você consiga abrir:
   * Equipamentos MikroTik RouterOS via Winbox.
-  * Equipamentos via Navegador Padrão.
 * Copie os arquivos do diretório *win64* para o C:/ do seu computador.
 * Abra o arquivo *winbox64.reg* com o bloco de notas. Altere *admin admin* para o seu usuário e senha padrão do MikroTik:
 ```
