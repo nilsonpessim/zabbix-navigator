@@ -117,12 +117,24 @@ function getMenuPopupHost(options, trigger_elmnt) {
 				label: t('Web')
 			},
 			winbox = {
-				label: t('Abrir no Winbox'),
+				label: t('Abrir com Winbox'),
 				url: new Curl('menupopup.php?application=Winbox&hostID=' + options.hostid).getUrl()
 			},
-			navegador = {
-				label: t('Abrir no Navegador'),
+			navigator = {
+				label: t('Abrir com Navegador'),
 				url: new Curl('menupopup.php?application=Navigator&hostID=' + options.hostid).getUrl()
+			},
+			putty_ssh = {
+				label: t('Abrir com SSH'),
+				url: new Curl('menupopup.php?application=SSH&hostID=' + options.hostid).getUrl()
+			},
+			putty_telnet = {
+				label: t('Abrir com Telnet'),
+				url: new Curl('menupopup.php?application=Telnet&hostID=' + options.hostid).getUrl()
+			},
+			winmtr_traceroute = {
+				label: t('Abrir com Traceroute'),
+				url: new Curl('menupopup.php?application=Traceroute&hostID=' + options.hostid).getUrl()
 			};
 
 		// inventory link
@@ -203,7 +215,10 @@ function getMenuPopupHost(options, trigger_elmnt) {
 			screens,
 			web,
 			winbox,
-			navegador
+			navigator,
+			putty_ssh,
+			putty_telnet,
+			winmtr_traceroute
 		];
 
 		if (options.showConfig) {
