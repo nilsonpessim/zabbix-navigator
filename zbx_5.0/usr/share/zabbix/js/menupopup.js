@@ -113,16 +113,16 @@ function getMenuPopupHost(options, trigger_elmnt) {
 			screens = {
 				label: t('Screens')
 			},
+			web = {
+				label: t('Web')
+			},
 			winbox = {
 				label: t('Abrir no Winbox'),
-				url: new Curl('menupopup.php?app=winbox&hostid=' + options.hostid).getUrl()
+				url: new Curl('menupopup.php?application=Winbox&hostID=' + options.hostid).getUrl()
 			},
 			navegador = {
 				label: t('Abrir no Navegador'),
-				url: new Curl('menupopup.php?app=navegador&hostid=' + options.hostid).getUrl()
-			},
-			web = {
-				label: t('Web')
+				url: new Curl('menupopup.php?application=Navigator&hostID=' + options.hostid).getUrl()
 			};
 
 		// inventory link

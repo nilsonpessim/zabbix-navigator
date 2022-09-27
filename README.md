@@ -4,22 +4,22 @@
 * :heavy_check_mark: A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 > TESTADO APENAS NO ZABBIX 5.0, INSTALADO NO UBUNTU 18.04 SERVER.
 
-## :cyclone: Funcionalidades
-* Acesso MikroTik via Winbox.
-* Acesso via Navegador Web Padrão.
+## :zap: Funcionalidades
+* :heavy_check_mark: Acesso MikroTik via Winbox.
+* :heavy_check_mark: Acesso via Navegador Web Padrão.
 
 ![Menu Incidentes](assets/img_1.png)
 
 ![Menu Mapa](assets/img.png)
 
 ## :cyclone: Arquivos do Zabbix
-* Antes de enviar os arquivos para o servidor, é importante realizar o backup do arquivo *menupopup.js*, presente na pasta /usr/share/zabbix/js. Este arquivo será substituído.
+* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js. Este arquivo será substituído.
 * Os arquivos que serão enviados para o servidor são:
 ```
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
-* Envie os arquivos *menupopup.php* e *menupopup.js* presentes no diretório *zbx_** para o servidor Zabbix via FTP, respeitando os diretórios. (Selecione os arquivos conforme a versão do seu sistema).
+* Envie os arquivos `menupopup.php` e `menupopup.js` presentes no diretório `zbx_*` para o servidor Zabbix via FTP, respeitando os diretórios. (Selecione os arquivos conforme a versão do seu sistema).
 * Reinicie o serviço do Zabbix:
 ```
 service zabbix-server restart
@@ -30,8 +30,8 @@ service zabbix-server restart
   * Equipamentos MikroTik RouterOS via Winbox.
 
 ### Abrir equipamentos MikroTik RouterOS via Winbox:
-* Copie os arquivos do diretório *win64* para o C:/ do seu Computador.
-* Abra o arquivo *winbox64.reg* com o bloco de notas. Altere *admin admin* para o seu usuário e senha padrão do MikroTik:
+* Copie os arquivos do diretório `win64` para o C:/ do seu Computador.
+* Abra o arquivo `winbox64.reg` com o bloco de notas. Altere `admin admin` para o seu usuário e senha padrão do MikroTik:
 ```
 @="C:\\winbox64.bat \"%1\" admin admin" -> Dessa forma, o Winbox irá logar com as suas credenciais.
 ```
@@ -41,7 +41,7 @@ service zabbix-server restart
 
 ![Arquivos dentro da Pasta](assets/img_3.png)
 
-* Dê um duplo clique no arquivo *winbox64.reg*, e confirme as alterações, este registro é necessário para que seu computador reconheça o Winbox como um protocolo.
+* Dê um duplo clique no arquivo `winbox64.reg`, e confirme as alterações, este registro é necessário para que seu computador reconheça o Winbox como um protocolo.
 
 ![Registro do Windows](assets/img_2.png)
 
@@ -55,6 +55,10 @@ service zabbix-server restart
 * `EM BREVE`
 
 ## :golf: Changelog:
+* `Versão 1.0.1 - 27/09/2022`
+* Correções de bugs e melhorias no arquivo menupopup.php
+
+
 * `Versão 1.0.0 - 23/09/2022`
   * Opção de acesso ao equipamento MikroTik via Winbox.
   * Opção de acesso ao equipamento via navegador Web Padrão.
