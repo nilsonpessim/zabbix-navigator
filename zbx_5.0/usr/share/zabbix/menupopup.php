@@ -23,32 +23,16 @@ $PDO = new PDO("mysql:host={$hostname};dbname={$database}", $username, $password
 /* Adiciona o array de retorno da Query de consulta, dentro da variável host */
 $host = $PDO->query("SELECT ip FROM interface WHERE hostid={$hostID} LIMIT 1")->fetch(PDO::FETCH_ASSOC);
 
-/* Condição para validar se o host existe dentro do Banco de Dados */
 if (!$host){header("Location: https://youtube.com/techlabs94?sub_confirmation=1");exit;}
 
 /* Checa o que estiver chegando na variavel $application para abrir o APP correto */
 switch ($application) {
-
     case "Winbox":
         header("Location: winbox:{$host['ip']}");
         break;
-
     case "Navigator":
         header("Location: http://{$host['ip']}");
         break;
-
-    case "SSH":
-        header("Location: ssh:{$host['ip']}");
-        break;
-
-    case "Telnet":
-        header("Location: telnet:{$host['ip']}");
-        break;
-
-    case "Traceroute":
-        header("Location: winmtr:{$host['ip']}");
-        break;
-
     default:
         header("Location: https://youtube.com/techlabs94?sub_confirmation=1");
         break;
