@@ -8,9 +8,9 @@
 * Acesso MikroTik via Winbox.
 * Acesso via Navegador Web Padrão.
 
-![Menu Incidentes](assets/img_1.png | width=100)
+![Menu Incidentes](assets/img_1.png)
 
-![Menu Mapa](assets/img.png | width=100)
+![Menu Mapa](assets/img.png)
 
 ## :cyclone: Arquivos do Zabbix
 * Antes de enviar os arquivos para o servidor, é importante realizar o backup do arquivo *menupopup.js*, presente na pasta /usr/share/zabbix/js. Este arquivo será substituído.
