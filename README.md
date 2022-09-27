@@ -55,10 +55,6 @@ service zabbix-server restart
 * `EM BREVE`
 
 ## :golf: Changelog:
-* `Versão 1.0.1 - 27/09/2022`
-* Correções de bugs e melhorias no arquivo menupopup.php
-
-
 * `Versão 1.0.0 - 23/09/2022`
   * Opção de acesso ao equipamento MikroTik via Winbox.
   * Opção de acesso ao equipamento via navegador Web Padrão.
