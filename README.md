@@ -54,7 +54,7 @@ Onde admin/admin, altere para o seu login/senha padrão:
 ```
 
 ### Acesso via Telnet:
-* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário e senha padrão:
+* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário padrão:
 ```
 Onde admin, altere para o seu login padrão:
 
