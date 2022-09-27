@@ -23,7 +23,7 @@
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
-* Envie os arquivos `menupopup.php` e `menupopup.js` presentes no diretório `zbx_*` para o servidor Zabbix via FTP, respeitando os diretórios. (Selecione os arquivos conforme a versão do seu sistema).
+* Envie os arquivos `menupopup.php` e `menupopup.js` presentes no diretório `zbx_5.0` para o servidor Zabbix via FTP, respeitando os diretórios.
 * Reinicie o serviço do Zabbix:
 ```
 service zabbix-server restart
