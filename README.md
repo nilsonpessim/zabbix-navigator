@@ -1,6 +1,6 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-# :rocket: Zabbix Navigator
+# :rocket: Zabbix Navigator - V1.0.1
 * :heavy_check_mark: A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 > TESTADO APENAS NO ZABBIX 5.0, INSTALADO NO UBUNTU 18.04 SERVER.
 
