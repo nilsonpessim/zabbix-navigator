@@ -29,7 +29,7 @@ service zabbix-server restart
 * Os arquivos são necessários para que você consiga abrir:
   * Equipamentos MikroTik RouterOS via Winbox.
 
-### Abrir equipamentos MikroTik RouterOS via Winbox:
+### :ok: Abrir equipamentos MikroTik RouterOS via Winbox:
 * Copie os arquivos do diretório `win64` para o C:/ do seu Computador.
 * Abra o arquivo `winbox64.reg` com o bloco de notas. Altere `admin admin` para o seu usuário e senha padrão do MikroTik:
 ```
@@ -55,6 +55,9 @@ service zabbix-server restart
 * `EM BREVE`
 
 ## :golf: Changelog:
+* `Versão 1.0.1 - 27/09/2022`
+  * Melhorias e Correção de BUGS no arquivo menupopup.php.
+
 * `Versão 1.0.0 - 23/09/2022`
   * Opção de acesso ao equipamento MikroTik via Winbox.
   * Opção de acesso ao equipamento via navegador Web Padrão.
