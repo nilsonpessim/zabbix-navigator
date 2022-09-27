@@ -29,7 +29,7 @@ service zabbix-server restart
 * Os arquivos são necessários para que você consiga abrir:
   * Equipamentos MikroTik RouterOS via Winbox.
 
-### Abrir equipamentos MikroTik via Winbox:
+### Abrir equipamentos MikroTik RouterOS via Winbox:
 * Copie os arquivos do diretório *win64* para o C:/ do seu Computador.
 * Abra o arquivo *winbox64.reg* com o bloco de notas. Altere *admin admin* para o seu usuário e senha padrão do MikroTik:
 ```
@@ -38,14 +38,15 @@ service zabbix-server restart
 * Por questões de segurança, ao salvar, será solicitado que salve em outra pasta, dessa forma, selecione a área de trabalho, e logo em seguida mova o arquivo para a pasta C:/
 
 * Os arquivos devem ficar da seguinte forma dentro da pasta:
+
 ![Arquivos dentro da Pasta](assets/img_3.png)
 
-* Dê um duplo clique no arquivo *winbox64.reg*, e confirme as alterações, este registro é utilizado para que seu computador reconheça o Winbox como um protocolo.
+* Dê um duplo clique no arquivo *winbox64.reg*, e confirme as alterações, este registro é necessário para que seu computador reconheça o Winbox como um protocolo.
 
 ![Registro do Windows](assets/img_2.png)
 
 * Agora seu PC Windows está pronto para abrir equipamentos pela página de incidentes e também pelo mapa de hosts.
-* DICA IMPORTANTE: Segure o botão CONTROL para abrir em uma nova aba do navegador, caso selecione esta opção.
+> Segure o botão CONTROL para abrir em uma nova aba do navegador, caso selecione esta opção.
 
 ## :apple: Arquivos do macOS:
 * `EM BREVE`
@@ -53,18 +54,23 @@ service zabbix-server restart
 ## :penguin: Arquivos do Linux Desktop:
 * `EM BREVE`
 
-## :golf: ChangeLog:
+## :golf: Changelog:
 * `Versão 1.0.0`
   * Opção de acesso ao equipamento MikroTik via Winbox.
   * Opção de acesso ao equipamento via navegador Web Padrão.
 
-## :sparkling_heart: Nos Ajude
->Se este Material foi útil para você, me ajude se inscrevendo no canal do YouTube (https://youtube.com/techlabs94?sub_confirmation=1), isso me incentiva a trazer mais materiais como este.
+## :sparkling_heart: Nos Ajude a Crescer
+>Se este Material foi útil para você, ajude se inscrevendo no meu canal do YouTube.
+>
+>(https://youtube.com/techlabs94?sub_confirmation=1)
+> 
+>Isso me incentiva a trazer mais materiais como este e muitos outros de redes e tecnologia.
+> 
 >## ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCWN6suTq5sZGqnSLos992Yw?style=social)
 
 
 ## :blue_book: Referências e Agradecimentos
 > [Zabbix Conference - Jorge Fernando](https://pt.slideshare.net/JorgeFernandoMatsudo/zabbix-conference-2018v2-95430345)
 
-## :iphone: WhatsApp
+## :iphone: Contato e Informações
 [![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5537999351046)](https://api.whatsapp.com/send?phone=5537999351046)
