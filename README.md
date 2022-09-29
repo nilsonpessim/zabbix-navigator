@@ -1,11 +1,13 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
 # :rocket: Zabbix Navigator - V1.2.2
-* :information_source: A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
+### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 
-> * :heavy_check_mark: Zabbix Server 6.2
-> * :heavy_check_mark: Zabbix Server 6.0 LTS
-> * :heavy_check_mark: Zabbix Server 5.0 LTS
+## :zap: Suporte
+
+* :heavy_check_mark: Zabbix Server 6.2
+* :heavy_check_mark: Zabbix Server 6.0 LTS
+* :heavy_check_mark: Zabbix Server 5.0 LTS
 
 ## :zap: Funcionalidades
 * :heavy_check_mark: Acesso via Winbox.
