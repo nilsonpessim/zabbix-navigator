@@ -1,9 +1,11 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-# :rocket: Zabbix Navigator - V1.1.1
+# :rocket: Zabbix Navigator - V1.2.2
 * :information_source: A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 
-> TESTADO NO ZABBIX 5.0 - UBUNTU 18.04 SERVER.
+> * :heavy_check_mark: Zabbix Server 6.2
+> * :heavy_check_mark: Zabbix Server 6.0 LTS
+> * :heavy_check_mark: Zabbix Server 5.0 LTS
 
 ## :zap: Funcionalidades
 * :heavy_check_mark: Acesso via Winbox.
@@ -23,7 +25,7 @@
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
-* Envie os arquivos `menupopup.php` e `menupopup.js` presentes no diretório `zbx_5.0` para o servidor Zabbix via FTP, respeitando os diretórios.
+* Envie os arquivos `menupopup.php` e `menupopup.js` presentes no diretório `zbx_*` para o servidor Zabbix via FTP, respeitando os diretórios. *(Selecione a pasta conforme a versão do seu Zabbix)*.
 * Reinicie o serviço do Zabbix:
 ```
 service zabbix-server restart
@@ -70,12 +72,16 @@ Onde admin, altere para o seu login padrão:
 
 > Quando abrir um equipamento via Navegador, clique com a tecla CONTROL pressionada.
 
-### Versão dos Arquivos:
+### Versão dos Softwares:
 * Winbox64: `3.37`
 * WinMTR:   `0.92`
 * PuTTY:    `0.77`
 
 ## :golf: Changelog:
+* `Versão 1.2.2 - 29/09/2022`
+  * Adicionado suporte para Zabbix 6.0 LTS.
+  * Adicionado suporte para Zabbix 6.2.
+---
 * `Versão 1.1.1 - 27/09/2022` 
   * Adicionado Opção para acesso via SSH com o PuTTY.
   * Adicionado Opção para acesso via Telnet com o PuTTY.
@@ -89,6 +95,7 @@ Onde admin, altere para o seu login padrão:
   * Melhorias e Correção de BUGS no arquivo menupopup.php.
 ---
 * `Versão 1.0.0 - 23/09/2022`
+  * Adicionado suporte para Zabbix 5.0 LTS.
   * Opção de acesso ao equipamento MikroTik via Winbox.
   * Opção de acesso ao equipamento via navegador Web Padrão.
 

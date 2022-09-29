@@ -1,7 +1,7 @@
 <?php
 
 /* Author: Nilson Pessim <nilson@techlabs.net.br>
- * Testado no Zabbix Versão 5.0 LTS
+ * Testado no Zabbix Versão 6.2
  * Youtube Channel: https://youtube.com/techlabs94?sub_confirmation=1 */
 
 /* Arquivo que contém as variáveis de ambiente do Zabbix */
