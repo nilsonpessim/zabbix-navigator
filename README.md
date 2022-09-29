@@ -11,6 +11,7 @@
 * [Changelog](#golf-changelog)
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
+---
 
 ### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 
