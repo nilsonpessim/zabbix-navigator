@@ -41,6 +41,7 @@ service zabbix-server restart
   * Traceroute utilizando o WinMTR.
 * Copie o diretório `windows/zabbix` para o C:/ do seu computador.
 
+--- 
 ### Acesso via Winbox:
 * Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário e senha padrão:
 ```
@@ -48,6 +49,8 @@ Onde admin/admin, altere para o seu login/senha padrão:
 
 @="C:\\\\zabbix\\scripts\\Winbox.bat \"%1\" admin admin"
 ```
+
+---
 
 ### Acesso via SSH:
 * Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário e senha padrão:
@@ -57,6 +60,8 @@ Onde admin/admin, altere para o seu login/senha padrão:
 @="C:\\\\zabbix\\scripts\\SSH.bat \"%1\" admin admin"
 ```
 
+---
+
 ### Acesso via Telnet:
 * Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário padrão:
 ```
@@ -64,6 +69,8 @@ Onde admin, altere para o seu login padrão:
 
 @="C:\\\\zabbix\\scripts\\Telnet.bat \"%1\" admin"
 ```
+
+---
 
 ### Registrando os Protocolos:
 * Dê um duplo clique no arquivo `Windows.reg`, e confirme as alterações. Esta alteração no registro é necessária para que seu computador reconheça o tipos de acesso como protocolos.
@@ -73,6 +80,8 @@ Onde admin, altere para o seu login padrão:
 * Agora seu PC Windows está pronto para abrir equipamentos pela página de incidentes e também pelo mapa de hosts.
 
 > Quando abrir um equipamento via Navegador, clique com a tecla CONTROL pressionada.
+
+---
 
 ### Versão dos Softwares:
 * Winbox64: `3.37`
