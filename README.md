@@ -2,9 +2,14 @@
 
 # :rocket: Zabbix Navigator - V1.2.2
 
-
-* [Windows](#computer-arquivos-do-windows)
+* [Arquivos Zabbix](#cyclone-arquivos-do-zabbix)
+* [Arquivos Windows](#computer-arquivos-do-windows)
   * [Acesso Winbox](#acesso-via-winbox)
+  * [Acesso SSH](#acesso-via-ssh)
+  * [Acesso Telnet](#acesso-via-telnet)
+  * [Registrando Protocolos](#registrando-os-protocolos)
+* [Changelog](#golf-changelog)
+* [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 
 ### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
