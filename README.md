@@ -1,6 +1,12 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
 # :rocket: Zabbix Navigator - V1.2.2
+
+
+* [Windows](#computer-arquivos-do-windows)
+  * [Acesso Winbox](#acesso-via-winbox)
+
+
 ### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 
 ## :zap: Suporte
