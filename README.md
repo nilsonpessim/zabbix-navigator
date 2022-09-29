@@ -7,7 +7,7 @@
   * [Acesso Winbox](#acesso-via-winbox)
   * [Acesso SSH](#acesso-via-ssh)
   * [Acesso Telnet](#acesso-via-telnet)
-  * [Registrando Protocolos](#registrando-os-protocolos)
+* [Registrando Protocolos](#registrando-os-protocolos)
 * [Changelog](#golf-changelog)
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
