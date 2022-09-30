@@ -1,6 +1,6 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-# :rocket: Zabbix Navigator - V1.2.2
+# :rocket: Zabbix Navigator - V1.2.3
 
 * [Arquivos Zabbix](#cyclone-arquivos-do-zabbix)
 * [Arquivos Windows](#computer-arquivos-do-windows)
@@ -12,6 +12,10 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
+
+>[README - ENGLISH](readme/en/README.md)
+>
+>[README - ESPAÑOL](readme/es/README.md)
 
 ### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 
@@ -39,7 +43,12 @@
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
-* Envie os arquivos `menupopup.php` e `menupopup.js` presentes no diretório `zabbix/*/usr/share/zabbix/` para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( NÃO ESQUEÇA DE SELECIONAR A PASTA REFERENTE A SUA VERSÃO DO ZABBIX)*.
+* A partir da versão 1.3.1 do Zabbix Navigator, contamos com outros arquivos .js para configurações e controle de idiomas.
+```
+/usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração.
+/usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas.
+```
+* Envie os arquivos presentes no diretório `zabbix/*/usr/share/zabbix/` para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( NÃO ESQUEÇA DE SELECIONAR A PASTA REFERENTE A SUA VERSÃO DO ZABBIX)*.
 * Reinicie o serviço do Zabbix:
 ```
 service zabbix-server restart
@@ -95,12 +104,39 @@ Onde admin, altere para o seu login padrão:
 
 ---
 
+### Arquivo de Configuração:
+* No Arquivo de configurações `js/menuconfig.js` É possível:
+  * Ligar/Desligar o Menu.
+  * Ligar/Desligar opções individuais.
+  * Alterar idioma do Menu.
+```
+let enableMenu = true;
+
+let enableWinbox     = true;
+let enableNavigator  = true;
+let enableSSH        = true;
+let enableTelnet     = true;
+let enableTraceroute = true;
+
+let defaultLang = "Portugues";
+```
+---
+
 ### Versão dos Softwares:
 * Winbox64: `3.37`
 * WinMTR:   `0.92`
 * PuTTY:    `0.77`
 
 ## :golf: Changelog:
+* `Versão 1.3.1 - 30/09/2022`
+  * Novas funcionalidades:
+    * Possibilidade de Ativar/Desativar o Menu.
+    * Possibilidade de Ativar/Desativar os itens do Menu individualmente.
+    * Possibilidade de Alterar o idioma do Menu (Português, Ingles, Espanhol).
+  * Reformulado a estrutura e posição dos itens do Menu.
+  * Grandes melhorias na estrutura de código do arquivo `menupopup.js`.
+  * Versão 1.3.1 do Zabbix Navigator é suportada pelo Zabbix 5.0 LTS, 6.0 LTS e 6.2.
+---
 * `Versão 1.2.2 - 29/09/2022`
   * Adicionado suporte para Zabbix 6.0 LTS.
   * Adicionado suporte para Zabbix 6.2.

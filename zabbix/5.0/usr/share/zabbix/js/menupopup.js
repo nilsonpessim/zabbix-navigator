@@ -93,6 +93,14 @@ function getMenuPopupHistory(options) {
  *
  * @return array
  */
+
+/* Import files TechLabs ****************************/
+
+$.getScript("js/menuconfig.js");
+$.getScript("js/menulang.js");
+
+/* Import files TechLabs ****************************/
+
 function getMenuPopupHost(options, trigger_elmnt) {
 	var sections = [];
 
@@ -115,26 +123,6 @@ function getMenuPopupHost(options, trigger_elmnt) {
 			},
 			web = {
 				label: t('Web')
-			},
-			winbox = {
-				label: t('Abrir com Winbox'),
-				url: new Curl('menupopup.php?application=Winbox&hostID=' + options.hostid).getUrl()
-			},
-			navigator = {
-				label: t('Abrir com Navegador'),
-				url: new Curl('menupopup.php?application=Navigator&hostID=' + options.hostid).getUrl()
-			},
-			putty_ssh = {
-				label: t('Abrir com SSH'),
-				url: new Curl('menupopup.php?application=SSH&hostID=' + options.hostid).getUrl()
-			},
-			putty_telnet = {
-				label: t('Abrir com Telnet'),
-				url: new Curl('menupopup.php?application=Telnet&hostID=' + options.hostid).getUrl()
-			},
-			winmtr_traceroute = {
-				label: t('Abrir com Traceroute'),
-				url: new Curl('menupopup.php?application=Traceroute&hostID=' + options.hostid).getUrl()
 			};
 
 		// inventory link
@@ -213,12 +201,7 @@ function getMenuPopupHost(options, trigger_elmnt) {
 			problems,
 			graphs,
 			screens,
-			web,
-			winbox,
-			navigator,
-			putty_ssh,
-			putty_telnet,
-			winmtr_traceroute
+			web
 		];
 
 		if (options.showConfig) {
@@ -260,6 +243,87 @@ function getMenuPopupHost(options, trigger_elmnt) {
 			items: getMenuPopupScriptData(options.scripts, options.hostid, trigger_elmnt)
 		});
 	}
+
+	/************************************** MENU CUSTOMIZADO **************************************/
+
+	/* ARRAY PARA AS OPÇÕES */
+	var zabbix_navigator = [];
+
+	/* WINBOX */
+	if(enableWinbox){
+		var winbox = {
+			label: t(textWinbox)
+		};
+		var winbox_url = new Curl('menupopup.php', false);
+		winbox_url.setArgument('application', 'Winbox');
+		winbox_url.setArgument('hostID', options.hostid);
+		winbox_url.setArgument('filter_set', '1');
+		winbox.url = winbox_url.getUrl();
+		zabbix_navigator.push(winbox);
+	}
+
+	/* NAVEGADOR WEB */
+	if(enableNavigator){
+		var navigator = {
+			label: t(textNavigator)
+		};
+		var navigator_url = new Curl('menupopup.php', false);
+		navigator_url.setArgument('application', 'Navigator');
+		navigator_url.setArgument('hostID', options.hostid);
+		navigator_url.setArgument('filter_set', '1');
+		navigator.url = navigator_url.getUrl();
+		zabbix_navigator.push(navigator);
+	}
+
+	/* PROTOCOLO SSH */
+	if(enableSSH){
+		var ssh = {
+			label: t(textSSH)
+		};
+		var ssh_url = new Curl('menupopup.php', false);
+		ssh_url.setArgument('application', 'SSH');
+		ssh_url.setArgument('hostID', options.hostid);
+		ssh_url.setArgument('filter_set', '1');
+		ssh.url = ssh_url.getUrl();
+		zabbix_navigator.push(ssh);
+	}
+
+	/* PROTOCOLO TELNET */
+	if(enableTelnet){
+		var telnet = {
+			label: t(textTelnet)
+		};
+		var telnet_url = new Curl('menupopup.php', false);
+		telnet_url.setArgument('application', 'Telnet');
+		telnet_url.setArgument('hostID', options.hostid);
+		telnet_url.setArgument('filter_set', '1');
+		telnet.url = telnet_url.getUrl();
+		zabbix_navigator.push(telnet);
+	}
+
+	/* TESTE TRACEROUTE */
+	if(enableTraceroute){
+		var traceroute = {
+			label: t(textTraceroute)
+		};
+		var traceroute_url = new Curl('menupopup.php', false);
+		traceroute_url.setArgument('application', 'Traceroute');
+		traceroute_url.setArgument('hostID', options.hostid);
+		traceroute_url.setArgument('filter_set', '1');
+		traceroute.url = traceroute_url.getUrl();
+		zabbix_navigator.push(traceroute);
+	}
+
+	/* EXIBE UMA A SESSÃO NO MENU COM OS ITENS */
+	if (enableMenu) {
+		sections.push({
+			label: t('Zabbix Navigator'),
+			items: zabbix_navigator
+		});
+	}
+
+	/************************************** MENU CUSTOMIZADO **************************************/
+
 
 	return sections;
 }
