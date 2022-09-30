@@ -13,10 +13,6 @@
 
 ---
 
->[README - ENGLISH](readme/en/README.md)
->
->[README - ESPAÑOL](readme/es/README.md)
-
 ### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
 
 ## :zap: Suporte
