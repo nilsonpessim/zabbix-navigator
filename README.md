@@ -1,6 +1,6 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-# :rocket: Zabbix Navigator - V1.2.3
+# :rocket: Zabbix Navigator - V1.3.1
 
 * [Arquivos Zabbix](#cyclone-arquivos-do-zabbix)
 * [Arquivos Windows](#computer-arquivos-do-windows)
