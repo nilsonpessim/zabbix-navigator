@@ -12,6 +12,10 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
+* [Download Versão 1.3.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.3.1)
+* [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
+
+---
 
 ### A customização adiciona novas opções no menu de acesso a hosts nas página de incidentes e também no Mapa.
 
