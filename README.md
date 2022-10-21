@@ -1,6 +1,6 @@
 ![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
 
-# :rocket: Zabbix Navigator - V1.3.1
+# :rocket: Zabbix Navigator
 
 * [Arquivos Zabbix](#cyclone-arquivos-do-zabbix)
 * [Arquivos Windows](#computer-arquivos-do-windows)
@@ -13,98 +13,110 @@
 
 ---
 
-### A customização adiciona novas opções no menu de acesso a equipamentos nas página de incidentes e também no Mapa de host.
+### A customização adiciona novas opções no menu de acesso a hosts nas página de incidentes e também no Mapa.
 
-## :zap: Suporte
+## :wrench: Funcionalidades
+* :large_blue_circle: Acessar hosts MikroTik com Winbox.
+* :large_blue_circle: Acessar hosts via SSH com Putty.
+* :large_blue_circle: Acessar hosts via Telnet com Putty.
+* :large_blue_circle: Acessar hosts via Navegador Web Padrão.
+* :large_blue_circle: Testar conectividade IP/Traceroute com WinMTR.
+
+## :heavy_check_mark: Compatibilidade
 
 * :heavy_check_mark: Zabbix Server 6.2
 * :heavy_check_mark: Zabbix Server 6.0 LTS
 * :heavy_check_mark: Zabbix Server 5.0 LTS
 
-## :zap: Funcionalidades
-* :heavy_check_mark: Acesso via Winbox.
-* :heavy_check_mark: Acesso via SSH com Putty.
-* :heavy_check_mark: Acesso via Telnet com Putty.
-* :heavy_check_mark: Traceroute via WinMTR.
-* :heavy_check_mark: Acesso via Navegador Web Padrão.
-
 ---
 
 ![Menu Mapa](assets/img.png)
 
-## :cyclone: Arquivos do Zabbix
-* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu servidor, pois o mesmo será substituído.
+## :cyclone: Arquivos necessário no Zabbix
+* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server, pois o mesmo será substituído.
 * Os arquivos que serão enviados para o servidor são:
 ```
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
-* A partir da versão 1.3.1 do Zabbix Navigator, contamos com outros arquivos .js para configurações e controle de idiomas.
+* A partir da versão 1.3.1 do Zabbix Navigator, contamos com novos arquivos .js para configurações e controle de idiomas, sendo eles:
 ```
-/usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração.
-/usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas.
+/usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
+/usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
-* Envie os arquivos presentes no diretório `zabbix/*/usr/share/zabbix/` para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( NÃO ESQUEÇA DE SELECIONAR A PASTA REFERENTE A SUA VERSÃO DO ZABBIX)*.
-* Reinicie o serviço do Zabbix:
+* Envie os arquivos presentes no diretório `zabbix/*/usr/share/zabbix/` para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
+* Reinicie o serviço do Zabbix Server:
 ```
 service zabbix-server restart
 ```
 
-## :computer: Arquivos do Windows
+## :computer: Arquivos necessários no Windows
 * Os arquivos são necessários e obrigatórios para que você consiga:
-  * Acessar equipamentos MikroTik utilizando o Winbox.
-  * Acessar equipamentos via SSH utilizando o PuTTY.
-  * Acessar equipamentos via Telnet utilizando o PuTTY.
-  * Traceroute utilizando o WinMTR.
-* Copie o diretório `windows/zabbix` para o C:/ do seu computador.
+  * Acessar hosts MikroTik utilizando o Winbox.
+  * Acessar hosts via SSH utilizando o PuTTY.
+  * Acessar hosts via Telnet utilizando o PuTTY.
+  * Testar conectividade IP/Traceroute utilizando o WinMTR.
+* Copie a pasta zabbix presente em `windows/` para o C:/ do seu computador.
+```
+O diretório ficará da seguinte forma -> C:/zabbix/
+```
+![Zabbix Folder](assets/img_3.png)
 
 --- 
-### Acesso via Winbox:
-* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário e senha padrão:
-```
-Onde admin/admin, altere para o seu login/senha padrão:
 
+### [IMPORTANTE] Configurar Acessos:
+* Para que seu computador seja capaz de abrir o host diretamente no seu respectivo software, é necessário registra-los como protocolo, dentro da pasta `C:/zabbix/reg/`, possuímos o arquivo `Windows.reg` responsável por essa função.
+* Além de registrar os protocolos, é possível configurar seu usuário e senha padrão, para que o software já abra o host informando automaticamente as sua credenciais de acesso. ISSO É FANTASTICO!
+* A configuração das credenciais é opcional, caso NÃO realize este ajuste, o software selecionado irá tentar conectar ao host utilizando as credenciais padrões que é o `admin/admin`.
+
+--- 
+
+### Configurando credenciais de acesso para o Winbox:
+* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. (Botão direto do mouse -> Editar) Onde admin/admin, altere para o seu login/senha padrão:
+```
 @="C:\\\\zabbix\\scripts\\Winbox.bat \"%1\" admin admin"
 ```
 
 ---
 
-### Acesso via SSH:
-* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário e senha padrão:
+### Configurando credenciais de acesso para Putty via SSH:
+* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. (Botão direto do mouse -> Editar) Onde admin/admin, altere para o seu login/senha padrão:
 ```
-Onde admin/admin, altere para o seu login/senha padrão:
-
 @="C:\\\\zabbix\\scripts\\SSH.bat \"%1\" admin admin"
 ```
 
 ---
 
-### Acesso via Telnet:
-* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. Altere as credenciais para o seu usuário padrão:
+### Configurando credenciais de acesso para Putty via Telnet:
+* Abra o arquivo .reg `C:/zabbix/reg/Windows.reg` com o bloco de notas. (Botão direto do mouse -> Editar) Onde admin, altere para o seu login padrão:
 ```
-Onde admin, altere para o seu login padrão:
-
 @="C:\\\\zabbix\\scripts\\Telnet.bat \"%1\" admin"
 ```
 
 ---
 
 ### Registrando os Protocolos:
-* Dê um duplo clique no arquivo `Windows.reg`, e confirme as alterações. Esta alteração no registro é necessária para que seu computador reconheça o tipos de acesso como protocolos.
+* Após a configuração (ou não) das credenciais no arquivo `Windows.reg`, temos que registrar os protocolos.
+* Dê um duplo clique no arquivo `Windows.reg`, e confirme as adição de informações no registro do Windows. 
+* *IMPORTANTE*: Esta alteração no registro é OBRIGATÓRIA para que seu computador reconheça o tipos de acesso como protocolos, assim você irá conseguir abrir os hosts.
 
 ![Registro do Windows](assets/img_2.png)
 
-* Agora seu PC Windows está pronto para abrir equipamentos pela página de incidentes e também pelo mapa de hosts.
+* Se você chegou até aqui parabéns, o seu computador está pronto para abrir os hosts pela página de incidentes e também pelo mapa.
 
-> Quando abrir um equipamento via Navegador, clique com a tecla CONTROL pressionada.
+> Quando abrir um host via Navegador, clique nele com a tecla CONTROL pressionada para abrir em uma nova guia.
 
 ---
 
+## :computer: Configurações Extras:
+* Por padrão o idioma de exibição do menu é o Portugues.
+* Por padrão todas as opções do mapa estão habilitadas.
+
 ### Arquivo de Configuração:
 * No Arquivo de configurações `js/menuconfig.js` É possível:
-  * Ligar/Desligar o Menu.
-  * Ligar/Desligar opções individuais.
-  * Alterar idioma do Menu.
+  * Habilitar/Desabilitar a customização do menu.
+  * Habilitar/Desabilitar as opções individuais.
+  * Alterar idioma de exibição do Menu.
 ```
 let enableMenu = true;
 
@@ -151,8 +163,8 @@ let defaultLang = "Portugues";
 ---
 * `Versão 1.0.0 - 23/09/2022`
   * Adicionado suporte para Zabbix 5.0 LTS.
-  * Opção de acesso ao equipamento MikroTik via Winbox.
-  * Opção de acesso ao equipamento via navegador Web Padrão.
+  * Opção de acesso aos hosts MikroTik via Winbox.
+  * Opção de acesso aos hosts via navegador Web Padrão.
 
 ## :sparkling_heart: Nos Ajude a Crescer
 >Se este Material foi útil para você, ajude se inscrevendo no meu canal do YouTube.
