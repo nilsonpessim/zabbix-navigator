@@ -16,9 +16,6 @@
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
-## Será necessário re-enviar o arquivo `menupopup.js` toda vez que for atualizado os pacotes e repositórios do Zabbix.
-
----
 
 ### A customização adiciona novas opções no menu de acesso a hosts nas página de incidentes e também no Mapa.
 
@@ -56,6 +53,10 @@
 ```
 service zabbix-server restart
 ```
+
+---
+#### Será necessário re-enviar o arquivo `menupopup.js` toda vez que for atualizado os pacotes e repositórios do Zabbix.
+---
 
 ## :computer: Arquivos necessários no Windows
 * Os arquivos são necessários e obrigatórios para que você consiga:
