@@ -31,6 +31,8 @@
 * :heavy_check_mark: Zabbix Server 6.2
 * :heavy_check_mark: Zabbix Server 6.0 LTS
 * :heavy_check_mark: Zabbix Server 5.0 LTS
+* :cd: Ubuntu/Debian
+* :cd: CentOS
 
 ---
 
@@ -140,6 +142,11 @@ let defaultLang = "Portugues";
 * PuTTY:    `0.77`
 
 ## :golf: Changelog:
+* `Versão 1.3.2 - 01/11/2022`
+  * Corrigido `ERRO HTTP 500` ao utilizar o sistema operacional CentOS:
+    * Issue #1 https://github.com/nilsonpessim/zabbix-navigator/issues/1
+  * Removido arquivos *_ORIGINAL.js presentes nas pastas JS do projeto.
+---
 * `Versão 1.3.1 - 30/09/2022`
   * Novas funcionalidades:
     * Possibilidade de Ativar/Desativar o Menu.
