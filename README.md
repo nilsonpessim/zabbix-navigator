@@ -146,6 +146,10 @@ let defaultLang = "Portugues";
 * PuTTY:    `0.77`
 
 ## :golf: Changelog:
+
+* `Versão 1.3.3 - 03/11/2022`
+  * Corrigido `ERRO HTTP 500` ao utilizar o PHP 8 no Ubuntu 22.04:
+---
 * `Versão 1.3.2 - 01/11/2022`
   * Corrigido `ERRO HTTP 500` ao utilizar o sistema operacional CentOS:
     * Issue #1 https://github.com/nilsonpessim/zabbix-navigator/issues/1
