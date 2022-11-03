@@ -4,6 +4,11 @@
  * Testado no Zabbix Versão 6.2
  * Youtube Channel: https://youtube.com/techlabs94?sub_confirmation=1 */
 
+// Erro 500 ocasionado pela versão do PHP 8
+if (PHP_VERSION_ID >= 80000){
+    define('IMAGE_FORMAT_PNG', 'PNG');
+}
+
 /* Arquivo que contém as variáveis de ambiente do Zabbix */
 require_once __DIR__ . "/conf/zabbix.conf.php";
 
