@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.3.2](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.3.2)
+* [Download Versão 1.3.3](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.3.3)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
