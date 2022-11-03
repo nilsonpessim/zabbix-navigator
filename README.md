@@ -19,6 +19,10 @@
 
 ### A customização adiciona novas opções no menu de acesso a hosts nas página de incidentes e também no Mapa.
 
+---
+### É necessário renviar o arquivo `menupopup.js` toda vez que atualizar os pacotes do Zabbix.
+---
+
 ## :wrench: Funcionalidades
 * :large_blue_circle: Acessar hosts MikroTik com Winbox.
 * :large_blue_circle: Acessar hosts via SSH com Putty.
@@ -26,13 +30,13 @@
 * :large_blue_circle: Acessar hosts via Navegador Web Padrão.
 * :large_blue_circle: Testar conectividade IP/Traceroute com WinMTR.
 
-## :heavy_check_mark: Compatibilidade
+## :heavy_check_mark: Compatibilidade | Testado nas versões:
 
 * :heavy_check_mark: Zabbix Server 6.2
 * :heavy_check_mark: Zabbix Server 6.0 LTS
 * :heavy_check_mark: Zabbix Server 5.0 LTS
-* :cd: Ubuntu/Debian
-* :cd: CentOS
+* :heavy_check_mark: PHP 7 | PHP 8
+* :cd: Ubuntu 18.04, 20.04, 22.04 | CentOS 8
 
 ---
 
@@ -148,7 +152,7 @@ let defaultLang = "Portugues";
 ## :golf: Changelog:
 
 * `Versão 1.3.3 - 03/11/2022`
-  * Corrigido `ERRO HTTP 500` ao utilizar o PHP 8 no Ubuntu 22.04:
+  * Corrigido `ERRO HTTP 500` ao utilizar o Zabbix 6 com PHP 8 no Ubuntu 22.04:
 ---
 * `Versão 1.3.2 - 01/11/2022`
   * Corrigido `ERRO HTTP 500` ao utilizar o sistema operacional CentOS:
