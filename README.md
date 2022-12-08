@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.3.3](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.3.3)
+* [Download Versão 1.4.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.4.1)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -32,6 +32,7 @@
 
 ## :heavy_check_mark: Compatibilidade | Testado nas versões:
 
+* :heavy_check_mark: Zabbix Server 6.4 PRE-RELEASE
 * :heavy_check_mark: Zabbix Server 6.2
 * :heavy_check_mark: Zabbix Server 6.0 LTS
 * :heavy_check_mark: Zabbix Server 5.0 LTS
@@ -147,10 +148,14 @@ let defaultLang = "Portugues";
 ### Versão dos Softwares:
 * Winbox64: `3.37`
 * WinMTR:   `0.92`
-* PuTTY:    `0.77`
+* PuTTY:    `0.78`
 
 ## :golf: Changelog:
 
+* `Versão 1.4.1 - 08/12/2022`
+  * Adicionado suporte para a versão 6.4 PRE-RELEASE
+  * Atualizado Putty para versão 0.78
+---
 * `Versão 1.3.3 - 03/11/2022`
   * Corrigido `ERRO HTTP 500` ao utilizar o Zabbix 6 com PHP 8 no Ubuntu 22.04:
 ---
