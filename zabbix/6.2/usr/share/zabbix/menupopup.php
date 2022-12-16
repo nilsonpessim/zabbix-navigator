@@ -54,6 +54,14 @@ switch ($application) {
         header("Location: winmtr:{$host['ip']}");
         break;
 
+    case "VNC":
+        header("Location: vnc:{$host['ip']}");
+        break;
+
+    case "Copy":
+        require_once __DIR__ . "/plugins/copyAddress.php";
+        break;
+
     default:
         header("Location: https://youtube.com/techlabs94?sub_confirmation=1");
         break;

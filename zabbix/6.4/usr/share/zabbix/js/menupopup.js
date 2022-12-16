@@ -399,6 +399,32 @@ function getMenuPopupHost(options, trigger_element) {
 		zabbix_navigator.push(traceroute);
 	}
 
+	/* PROTOCOLO VNC */
+	if(enableVNC){
+		var vnc = {
+			label: t(textVNC)
+		};
+		var vnc_url = new Curl('menupopup.php', false);
+		vnc_url.setArgument('application', 'VNC');
+		vnc_url.setArgument('hostID', options.hostid);
+		vnc_url.setArgument('filter_set', '1');
+		vnc.url = vnc_url.getUrl();
+		zabbix_navigator.push(vnc);
+	}
+
+	/* COPIAR IP */
+	if(enableCopy){
+		var copy = {
+			label: t(textCopy)
+		};
+		var copy_url = new Curl('menupopup.php', false);
+		copy_url.setArgument('application', 'Copy');
+		copy_url.setArgument('hostID', options.hostid);
+		copy_url.setArgument('filter_set', '1');
+		copy.url = copy_url.getUrl();
+		zabbix_navigator.push(copy);
+	}
+
 	/* EXIBE UMA A SESSÃO NO MENU COM OS ITENS */
 	if (enableMenu) {
 		sections.push({

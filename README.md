@@ -12,15 +12,15 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.4.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.4.1)
+* [Download Versão 1.5.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.1)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
 
-### A customização adiciona novas opções no menu de acesso a hosts nas página de incidentes e também no Mapa.
+### A customização adiciona novas opções ao menu de acesso a hosts nas páginas de incidentes e também no Mapa.
 
 ---
-### É necessário renviar o arquivo `menupopup.js` toda vez que atualizar os pacotes do Zabbix.
+### É necessário reenviar o arquivo `menupopup.js` toda vez que atualizar os pacotes do Zabbix (apt -y upgrade)
 ---
 
 ## :wrench: Funcionalidades
@@ -28,9 +28,11 @@
 * :large_blue_circle: Acessar hosts via SSH com Putty.
 * :large_blue_circle: Acessar hosts via Telnet com Putty.
 * :large_blue_circle: Acessar hosts via Navegador Web Padrão.
+* :large_blue_circle: Acessar hosts via VNC Viewer.
 * :large_blue_circle: Testar conectividade IP/Traceroute com WinMTR.
+* :large_blue_circle: Copiar IP do host para área de trabalho.
 
-## :heavy_check_mark: Compatibilidade | Testado nas versões:
+## :heavy_check_mark: Compatibilidade - Testado nas versões:
 
 * :heavy_check_mark: Zabbix Server 6.4 PRE-RELEASE
 * :heavy_check_mark: Zabbix Server 6.2
@@ -41,10 +43,14 @@
 
 ---
 
+#### Caso haja problemas com a sua instalação, abra um Issue, que teremos o prazer de avaliar e corrigir os possíveis problemas.
+
+---
+
 ![Menu Mapa](assets/img.png)
 
-## :cyclone: Arquivos necessário no Zabbix
-* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server, pois o mesmo será substituído.
+## :cyclone: Arquivos necessários no Zabbix
+* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server, pois o mesmo será substituído pela versão customizada.
 * Os arquivos que serão enviados para o servidor são:
 ```
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
@@ -55,7 +61,12 @@
 /usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
 /usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
+* A partir da versão 1.5.1 do Zabbix Navigator, contamos com o diretório `plugins`, onde são armazenados os arquivos complementares do menu.
+```
+/usr/share/zabbix/plugins
+```
 * Envie os arquivos presentes no diretório `zabbix/*/usr/share/zabbix/` para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
+
 * Reinicie o serviço do Zabbix Server:
 ```
 service zabbix-server restart
@@ -70,6 +81,7 @@ service zabbix-server restart
   * Acessar hosts MikroTik utilizando o Winbox.
   * Acessar hosts via SSH utilizando o PuTTY.
   * Acessar hosts via Telnet utilizando o PuTTY.
+  * Acessar hosts via RFB utilizando o VNC Viewer.
   * Testar conectividade IP/Traceroute utilizando o WinMTR.
 * Copie a pasta zabbix presente em `windows/` para o C:/ do seu computador.
 ```
@@ -140,6 +152,8 @@ let enableNavigator  = true;
 let enableSSH        = true;
 let enableTelnet     = true;
 let enableTraceroute = true;
+let enableVNC        = true;
+let enableCopy       = true;
 
 let defaultLang = "Portugues";
 ```
@@ -149,9 +163,15 @@ let defaultLang = "Portugues";
 * Winbox64: `3.37`
 * WinMTR:   `0.92`
 * PuTTY:    `0.78`
+* VNC: `6.22`
 
 ## :golf: Changelog:
 
+* `Versão 1.5.1 - 16/12/2022`
+  * Adicionado Opção para acesso via RFB com o VNC Viewer.
+  * Adicionado Opção para copiar IP do Host.
+  * O arquivo Windows.reg foi reformulado.
+---
 * `Versão 1.4.1 - 08/12/2022`
   * Adicionado suporte para a versão 6.4 PRE-RELEASE
   * Atualizado Putty para versão 0.78

@@ -2,13 +2,13 @@ Windows Registry Editor Version 5.00
 
 ;
 ; Author: Nilson Pessim <nilson@techlabs.net.br>
-; Registro para utilizar Winbox, SSH, Telnet, Traceroute através do Zabbix.
+; Registro para utilizar Winbox, SSH, Telnet, VNC, Traceroute através do Zabbix.
 ; Youtube Channel: https://youtube.com/techlabs94?sub_confirmation=1
 ;
 ;
-; ######################### WINBOX ##################################################
+; -------------------------- Winbox --------------------------
 ;
-;   REGISTRO DO WINDOWS PARA UTILIZAR WINBOX
+;   Registro do Windows para Utilizar o Winbox
 ;
 
 [HKEY_CLASSES_ROOT\Winbox]
@@ -18,13 +18,14 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\Winbox\shell\open]
 [HKEY_CLASSES_ROOT\Winbox\shell\open\command]
 @="C:\\\\zabbix\\scripts\\Winbox.bat \"%1\" admin admin"
+;
+;
+;
+;
 
-; ######################### WINBOX ##################################################
+; ---------------------------- SSH ---------------------------
 ;
-;
-; ########################## SSH ####################################################
-;
-;   REGISTRO DO WINDOWS PARA UTILIZAR SSH
+;   Registro do Windows para Utilizar o SSH
 ;
 
 [HKEY_CLASSES_ROOT\SSH]
@@ -34,13 +35,14 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\SSH\shell\open]
 [HKEY_CLASSES_ROOT\SSH\shell\open\command]
 @="C:\\\\zabbix\\scripts\\SSH.bat \"%1\" admin admin"
+;
+;
+;
+;
 
-; ########################## SSH ####################################################
+; -------------------------- Telnet --------------------------
 ;
-;
-; ######################### TELNET ##################################################
-;
-;   REGISTRO DO WINDOWS PARA UTILIZAR TELNET
+;   Registro do Windows para Utilizar o Telnet
 ;
 
 [HKEY_CLASSES_ROOT\TELNET]
@@ -50,13 +52,14 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\TELNET\shell\open]
 [HKEY_CLASSES_ROOT\TELNET\shell\open\command]
 @="C:\\\\zabbix\\scripts\\Telnet.bat \"%1\" admin"
+;
+;
+;
+;
 
-; ######################### TELNET ##################################################
+; ----------------------- Traceroute ------------------------
 ;
-;
-; ####################### TRACEROUTE ################################################
-;
-;   REGISTRO DO WINDOWS PARA UTILIZAR TRACEROUTE
+;   Registro do Windows para Utilizar o Traceroute
 ;
 
 [HKEY_CLASSES_ROOT\WinMTR]
@@ -66,7 +69,24 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\WinMTR\shell\open]
 [HKEY_CLASSES_ROOT\WinMTR\shell\open\command]
 @="C:\\\\zabbix\\scripts\\Traceroute.bat \"%1\""
+;
+;
+;
+;
 
-; ####################### TRACEROUTE ################################################
+; -------------------------- VNC Viewer --------------------------
+;
+;  Registro do Windows para Utilizar o VNC Viewer
+;
+
+[HKEY_CLASSES_ROOT\VNC]
+@="URL:VNC Protocol"
+"URL Protocol"=""
+[HKEY_CLASSES_ROOT\VNC\shell]
+[HKEY_CLASSES_ROOT\VNC\shell\open]
+[HKEY_CLASSES_ROOT\VNC\shell\open\command]
+@="C:\\\\zabbix\\scripts\\VNC.bat \"%1\""
+;
+;
 ;
 ;

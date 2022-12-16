@@ -1,12 +1,14 @@
-/* Liga/Desliga o Menu: true, false */
+/* Habilita/Desbilita o Menu: true, false */
 let enableMenu = true;
 
-/* Liga/Desliga as opções de forma individual no Menu: true, false */
+/* Habilita/Desbilita as opções de forma individual no Menu: true, false */
 let enableWinbox     = true; // MikroTik Winbox
 let enableNavigator  = true; // Navegador Web
 let enableSSH        = true; // Protocolo SSH
 let enableTelnet     = true; // Protocolo Telnet
 let enableTraceroute = true; // Teste de Traceroute
+let enableVNC        = true; // Protocolo VNC
+let enableCopy       = true; // Copiar IP
 
 /* Gerencia o Idioma do Menu: Portugues, English, Espanol */
 let defaultLang = "Portugues";
