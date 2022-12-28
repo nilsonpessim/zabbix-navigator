@@ -43,7 +43,7 @@
 
 ---
 
-#### Caso haja problemas com a sua instalação, abra um Issue, que teremos o prazer de avaliar e corrigir os possíveis problemas.
+#### Caso haja problemas com a sua instalação, abra um Issue, que teremos o prazer de avaliar e corrigi-los.
 
 ---
 
