@@ -168,8 +168,8 @@ let defaultLang = "Portugues";
 ## :golf: Changelog:
 
 * `Versão 1.5.1 - 16/12/2022`
-  * Adicionado Opção para acesso via RFB com o VNC Viewer.
-  * Adicionado Opção para copiar IP do Host.
+  * Adicionado Opção para acesso via RFB com o VNC Viewer - `(Cleto Honorato)`
+  * Adicionado Opção para copiar IP do Host. - `(ttamiozzo)`
   * O arquivo Windows.reg foi reformulado.
 ---
 * `Versão 1.4.1 - 08/12/2022`
@@ -181,7 +181,7 @@ let defaultLang = "Portugues";
 ---
 * `Versão 1.3.2 - 01/11/2022`
   * Corrigido `ERRO HTTP 500` ao utilizar o sistema operacional CentOS:
-    * Issue #1 https://github.com/nilsonpessim/zabbix-navigator/issues/1
+    * Issue https://github.com/nilsonpessim/zabbix-navigator/issues/1 - `(Matheus-Boone)`
   * Removido arquivos *_ORIGINAL.js presentes nas pastas JS do projeto.
 ---
 * `Versão 1.3.1 - 30/09/2022`
