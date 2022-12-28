@@ -2,11 +2,11 @@
 
 # :rocket: Zabbix Navigator
 
-* [Arquivos Zabbix](#cyclone-arquivos-do-zabbix)
-* [Arquivos Windows](#computer-arquivos-do-windows)
-  * [Acesso Winbox](#acesso-via-winbox)
-  * [Acesso SSH](#acesso-via-ssh)
-  * [Acesso Telnet](#acesso-via-telnet)
+* [Arquivos Zabbix](#cyclone-arquivos-necessários-no-zabbix)
+* [Arquivos Windows](#computer-arquivos-necessários-no-windows)
+  * [Acesso Winbox](#configurando-credenciais-de-acesso-para-o-winbox)
+  * [Acesso SSH](#configurando-credenciais-de-acesso-para-putty-via-ssh)
+  * [Acesso Telnet](#configurando-credenciais-de-acesso-para-putty-via-telnet)
 * [Registrando Protocolos](#registrando-os-protocolos)
 * [Changelog](#golf-changelog)
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
