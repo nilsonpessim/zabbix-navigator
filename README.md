@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.5.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.1)
+* [Download Versão 1.5.2](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.2)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -39,6 +39,7 @@
 * :heavy_check_mark: Zabbix Server 6.0 LTS
 * :heavy_check_mark: Zabbix Server 5.0 LTS
 * :heavy_check_mark: PHP 7 | PHP 8
+* :heavy_check_mark: MySQL | PostgreSQL
 * :cd: Ubuntu 18.04, 20.04, 22.04 | CentOS 8
 
 ---
@@ -167,6 +168,10 @@ let defaultLang = "Portugues";
 
 ## :golf: Changelog:
 
+* `Versão 1.5.2 - 05/02/2023`
+  * Adicionado Suporte ao PostgreSQL
+    * Issue https://github.com/nilsonpessim/zabbix-navigator/issues/4 - `(AlOliveira88)`
+---
 * `Versão 1.5.1 - 16/12/2022`
   * Adicionado Opção para acesso via RFB com o VNC Viewer - `(Cleto Honorato)`
   * Adicionado Opção para copiar IP do Host. - `(ttamiozzo)`
