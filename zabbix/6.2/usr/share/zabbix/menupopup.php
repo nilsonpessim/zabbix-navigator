@@ -12,6 +12,13 @@ if (PHP_VERSION_ID >= 80000){
 /* Arquivo que contém as variáveis de ambiente do Zabbix */
 require_once __DIR__ . "/conf/zabbix.conf.php";
 
+/**
+ * Tipo do Banco de dados
+ * mysql => Banco de dados MySQL
+ * pgsql => Banco de dados PostgreSQL
+ */
+$dbType = 'mysql';
+
 /* Variáveis $_GET para receber os parámetros vindo da URL */
 $application  = (isset($_GET['application'])) ? $_GET['application'] : '*';
 $hostID       = (isset($_GET['hostID']))      ? $_GET['hostID']      : '*';
@@ -23,7 +30,7 @@ $username = $DB['USER'];
 $password = $DB['PASSWORD'];
 
 /* Abre uma conexão PDO com o Banco de Dados */
-$PDO = new PDO("mysql:host={$hostname};dbname={$database}", $username, $password);
+$PDO = new PDO("{$dbType}:host={$hostname};dbname={$database}", $username, $password);
 
 /* Adiciona o array de retorno da Query de consulta, dentro da variável host */
 $host = $PDO->query("SELECT ip FROM interface WHERE hostid={$hostID} LIMIT 1")->fetch(PDO::FETCH_ASSOC);
