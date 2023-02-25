@@ -7,13 +7,6 @@
 /* Arquivo que contém as variáveis de ambiente do Zabbix */
 require_once __DIR__ . "/conf/zabbix.conf.php";
 
-/**
- * Tipo do Banco de dados
- * mysql => Banco de dados MySQL
- * pgsql => Banco de dados PostgreSQL
- */
-$dbType = 'mysql';
-
 /* Variáveis $_GET para receber os parámetros vindo da URL */
 $application  = (isset($_GET['application'])) ? $_GET['application'] : '*';
 $hostID       = (isset($_GET['hostID']))      ? $_GET['hostID']      : '*';
@@ -23,6 +16,22 @@ $hostname = $DB['SERVER'];
 $database = $DB['DATABASE'];
 $username = $DB['USER'];
 $password = $DB['PASSWORD'];
+
+/* Verifica tipo do banco de dados */
+switch ($DB['TYPE']) {
+    case "MYSQL":
+        $dbType = 'mysql';
+        break;
+        
+    case "POSTGRESQL":
+        $dbType = 'pgsql';
+        break;
+    
+    default:
+        echo "Olá! No momento há suporte apenas para os bancos de dados MySQL e PostgreSQL, <br> <br> Entre em contato pelo WhatsApp: +5537999351046 - Nilson Pessim, para mais informações, ou verifique se há uma versão mais recente da ferramenta em https://github.com/nilsonpessim/zabbix-navigator";
+        exit;
+        break;
+}
 
 /* Abre uma conexão PDO com o Banco de Dados */
 $PDO = new PDO("{$dbType}:host={$hostname};dbname={$database}", $username, $password);

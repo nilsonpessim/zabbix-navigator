@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.5.2](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.2)
+* [Download Versão 1.5.3](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.3)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -21,6 +21,7 @@
 
 ---
 ### É necessário reenviar o arquivo `menupopup.js` toda vez que atualizar os pacotes do Zabbix (apt -y upgrade)
+
 ---
 
 ## :wrench: Funcionalidades
@@ -43,9 +44,7 @@
 * :cd: Ubuntu 18.04, 20.04, 22.04 | CentOS 8
 
 ---
-
-#### Caso haja problemas com a sua instalação, abra um Issue, que teremos o prazer de avaliar e corrigi-los.
-
+#### EM CASO DE DÚVIDAS E CORREÇÕES DE ERROS NO PLUGIN, POR FAVOR, ABRE UM ISSUE. TEREMOS O PRAZER EM REALIZAR UMA AVALIAÇÃO E CORRIGI-LOS.
 ---
 
 ![Menu Mapa](assets/img.png)
@@ -72,10 +71,6 @@
 ```
 service zabbix-server restart
 ```
-
----
-#### Será necessário re-enviar o arquivo `menupopup.js` toda vez que for atualizado os pacotes e repositórios do Zabbix.
----
 
 ## :computer: Arquivos necessários no Windows
 * Os arquivos são necessários e obrigatórios para que você consiga:
@@ -164,10 +159,15 @@ let defaultLang = "Portugues";
 * Winbox64: `3.37`
 * WinMTR:   `0.92`
 * PuTTY:    `0.78`
-* VNC: `6.22`
+* VNC: `7.0.1`
 
 ## :golf: Changelog:
 
+* `Versão 1.5.3 - 25/02/2023`
+  * Seleção automática do banco de dados (MySQL e PostgreSQL):
+    * Melhorias no recurso implementado na versão 1.5.2, na qual a seleção devia ser feita de forma manual no arquivo `menupopup.php`.
+  * Atualizado VNC para versão 7.0.1
+---
 * `Versão 1.5.2 - 05/02/2023`
   * Adicionado Suporte ao PostgreSQL
     * Issue https://github.com/nilsonpessim/zabbix-navigator/issues/4 - `(AlOliveira88)`
