@@ -5,13 +5,23 @@
 ---
 
 ### Versão dos Softwares:
-* Winbox64: `3.37`
+* Winbox64: `3.39`
 * WinMTR:   `0.92`
-* PuTTY:    `0.78`
-* VNC: `7.0.1`
+* PuTTY:    `0.79`
+* VNC: `7.6.0`
+
+---
 
 ## :golf: Changelog:
 
+* `Versão 1.5.4 - 31/08/2023`
+  * Adicionado Suporte a versão 7.0 PRE-RELEASE
+  * Adicionado Opção para acesso via Microsoft RDP - `(@andersonmarin)`
+  * Atualizado Winbox para versão 3.39
+  * Atualizado Putty para a versão 0.79
+  * Atualizado VNC para a versão 7.6.0
+  * Reformulado a estrutura e posição dos itens do Menu. 
+---
 * `Versão 1.5.3 - 25/02/2023`
   * Seleção automática do banco de dados (MySQL e PostgreSQL):
     * Melhorias no recurso implementado na versão 1.5.2, na qual a seleção devia ser feita de forma manual no arquivo `menupopup.php`.

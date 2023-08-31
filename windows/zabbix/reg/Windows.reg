@@ -57,6 +57,23 @@ Windows Registry Editor Version 5.00
 ;
 ;
 
+; ---------------------------- RDP ----------------------------
+;
+;   Registro do Windows para Utilizar o RDP
+;
+
+[HKEY_CLASSES_ROOT\RDP]
+@="URL:RDP Protocol"
+"URL Protocol"=""
+[HKEY_CLASSES_ROOT\RDP\shell]
+[HKEY_CLASSES_ROOT\RDP\shell\open]
+[HKEY_CLASSES_ROOT\RDP\shell\open\command]
+@="C:\\\\zabbix\\scripts\\RDP.bat \"%1\" admin admin"
+;
+;
+;
+;
+
 ; ----------------------- Traceroute ------------------------
 ;
 ;   Registro do Windows para Utilizar o Traceroute

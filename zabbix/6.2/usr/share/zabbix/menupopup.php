@@ -66,6 +66,10 @@ switch ($application) {
         header("Location: telnet:{$host['ip']}");
         break;
 
+    case "RDP":
+        header("Location: rdp:{$host['ip']}");
+        break;
+
     case "Traceroute":
         header("Location: winmtr:{$host['ip']}");
         break;
