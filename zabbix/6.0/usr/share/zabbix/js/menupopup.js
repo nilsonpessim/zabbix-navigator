@@ -227,7 +227,7 @@ function getMenuPopupHost(options, trigger_element) {
 	/* EXIBE UMA A SESSÃO NO MENU COM OS ITENS */
 	if (enableMenu) {
 		sections.push({
-			label: t('Zabbix Navigator'),
+			label: t('Zabbix Navigator - V1.5.4'),
 			items: zabbix_navigator
 		});
 	}
