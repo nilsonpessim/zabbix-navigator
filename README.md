@@ -11,9 +11,6 @@
 * [Changelog](#golf-changelog)
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
-
-[![ZABBIX_NAVIGATOR](https://img.youtube.com/vi/xrN8RhxJ_W0/0.jpg)](https://www.youtube.com/watch?v=xrN8RhxJ_W0)
-
 ---
 * [Download Versão 1.5.4](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.4)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
