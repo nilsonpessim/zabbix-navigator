@@ -30,6 +30,7 @@
 * :large_blue_circle: Acessar hosts via Telnet com Putty.
 * :large_blue_circle: Acessar hosts via Navegador Web Padrão.
 * :large_blue_circle: Acessar hosts via VNC Viewer.
+* :large_blue_circle: Acessar hosts via Microsoft RDP.
 * :large_blue_circle: Testar conectividade IP/Traceroute com WinMTR.
 * :large_blue_circle: Copiar IP do host para área de trabalho.
 
