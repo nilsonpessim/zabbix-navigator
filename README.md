@@ -48,7 +48,7 @@
 #### EM CASO DE DÚVIDAS E CORREÇÕES DE ERROS NO PLUGIN, POR FAVOR, ABRE UM ISSUE. TEREMOS O PRAZER EM REALIZAR UMA AVALIAÇÃO E CORRIGI-LOS.
 ---
 
-![Menu Mapa](assets/img.png)
+![Menu Mapa](https://github.com/nilsonpessim/zabbix-navigator/assets/6774062/fa05430e-a44e-4b3e-87b2-13d4d2805fac)
 
 ## :cyclone: Arquivos necessários no Zabbix
 * Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server, pois o mesmo será substituído pela versão customizada.
