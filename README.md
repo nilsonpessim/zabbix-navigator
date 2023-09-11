@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.5.4](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.4)
+* [Download Versão 1.5.5](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.5)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -166,6 +166,10 @@ let defaultLang = "Portugues";
 
 ## :golf: Changelog:
 
+* `Versão 1.5.5 - 11/09/2023`
+  * Reformulado a estrutura e posição dos itens do Menu
+    * - O conteúdo poderá apresentar cortado, dependendo da resolução do monitor.
+---
 * `Versão 1.5.4 - 31/08/2023`
   * Adicionado Suporte a versão 7.0 PRE-RELEASE
   * Adicionado Opção para acesso via Microsoft RDP - `(@andersonmarin)`
