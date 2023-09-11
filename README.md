@@ -168,7 +168,7 @@ let defaultLang = "Portugues";
 
 * `Versão 1.5.5 - 11/09/2023`
   * Reformulado a estrutura e posição dos itens do Menu
-    * - O conteúdo poderá apresentar cortado, dependendo da resolução do monitor.
+    * O conteúdo poderá apresentar cortado, dependendo da resolução do monitor.
 ---
 * `Versão 1.5.4 - 31/08/2023`
   * Adicionado Suporte a versão 7.0 PRE-RELEASE
