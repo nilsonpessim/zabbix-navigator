@@ -13,3 +13,6 @@ let enableCopy       = true; // Copiar IP
 
 /* Gerencia o Idioma do Menu: Portugues, English, Espanol */
 let defaultLang = "Portugues";
+
+/* Version */
+let version = "V1.5.5";

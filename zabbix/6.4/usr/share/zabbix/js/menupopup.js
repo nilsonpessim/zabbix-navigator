@@ -118,125 +118,6 @@ function getMenuPopupHost(options, trigger_element) {
 	const configuration = [];
 	let url;
 
-	/************************************** MENU CUSTOMIZADO **************************************/
-
-	/* ARRAY PARA AS OPÇÕES */
-	var zabbix_navigator = [];
-
-	/* WINBOX */
-	if(enableWinbox){
-		var winbox = {
-			label: t(textWinbox)
-		};
-		var winbox_url = new Curl('menupopup.php', false);
-		winbox_url.setArgument('application', 'Winbox');
-		winbox_url.setArgument('hostID', options.hostid);
-		winbox_url.setArgument('filter_set', '1');
-		winbox.url = winbox_url.getUrl();
-		zabbix_navigator.push(winbox);
-	}
-
-	/* NAVEGADOR WEB */
-	if(enableNavigator){
-		var navigator = {
-			label: t(textNavigator)
-		};
-		var navigator_url = new Curl('menupopup.php', false);
-		navigator_url.setArgument('application', 'Navigator');
-		navigator_url.setArgument('hostID', options.hostid);
-		navigator_url.setArgument('filter_set', '1');
-		navigator.url = navigator_url.getUrl();
-		zabbix_navigator.push(navigator);
-	}
-
-	/* PROTOCOLO SSH */
-	if(enableSSH){
-		var ssh = {
-			label: t(textSSH)
-		};
-		var ssh_url = new Curl('menupopup.php', false);
-		ssh_url.setArgument('application', 'SSH');
-		ssh_url.setArgument('hostID', options.hostid);
-		ssh_url.setArgument('filter_set', '1');
-		ssh.url = ssh_url.getUrl();
-		zabbix_navigator.push(ssh);
-	}
-
-	/* PROTOCOLO TELNET */
-	if(enableTelnet){
-		var telnet = {
-			label: t(textTelnet)
-		};
-		var telnet_url = new Curl('menupopup.php', false);
-		telnet_url.setArgument('application', 'Telnet');
-		telnet_url.setArgument('hostID', options.hostid);
-		telnet_url.setArgument('filter_set', '1');
-		telnet.url = telnet_url.getUrl();
-		zabbix_navigator.push(telnet);
-	}
-
-	/* PROTOCOLO RDP */
-	if(enableRDP){
-		var rdp = {
-			label: t(textRDP)
-		};
-		var rdp_url = new Curl('menupopup.php', false);
-		rdp_url.setArgument('application', 'RDP');
-		rdp_url.setArgument('hostID', options.hostid);
-		rdp_url.setArgument('filter_set', '1');
-		rdp.url = rdp_url.getUrl();
-		zabbix_navigator.push(rdp);
-	}
-
-	/* TESTE TRACEROUTE */
-	if(enableTraceroute){
-		var traceroute = {
-			label: t(textTraceroute)
-		};
-		var traceroute_url = new Curl('menupopup.php', false);
-		traceroute_url.setArgument('application', 'Traceroute');
-		traceroute_url.setArgument('hostID', options.hostid);
-		traceroute_url.setArgument('filter_set', '1');
-		traceroute.url = traceroute_url.getUrl();
-		zabbix_navigator.push(traceroute);
-	}
-
-	/* PROTOCOLO VNC */
-	if(enableVNC){
-		var vnc = {
-			label: t(textVNC)
-		};
-		var vnc_url = new Curl('menupopup.php', false);
-		vnc_url.setArgument('application', 'VNC');
-		vnc_url.setArgument('hostID', options.hostid);
-		vnc_url.setArgument('filter_set', '1');
-		vnc.url = vnc_url.getUrl();
-		zabbix_navigator.push(vnc);
-	}
-
-	/* COPIAR IP */
-	if(enableCopy){
-		var copy = {
-			label: t(textCopy)
-		};
-		var copy_url = new Curl('menupopup.php', false);
-		copy_url.setArgument('application', 'Copy');
-		copy_url.setArgument('hostID', options.hostid);
-		copy_url.setArgument('filter_set', '1');
-		copy.url = copy_url.getUrl();
-		zabbix_navigator.push(copy);
-	}
-
-	/* EXIBE UMA A SESSÃO NO MENU COM OS ITENS */
-	if (enableMenu) {
-		sections.push({
-			label: t('Zabbix Navigator - V1.5.4'),
-			items: zabbix_navigator
-		});
-	}
-
-	/************************************** MENU CUSTOMIZADO **************************************/
-
 	// go to section
 	if (options.hasGoTo) {
 		// dashboard
@@ -445,6 +326,125 @@ function getMenuPopupHost(options, trigger_element) {
 			items: getMenuPopupScriptData(options.scripts, trigger_element, options.hostid)
 		});
 	}
+
+	/************************************** MENU CUSTOMIZADO **************************************/
+
+	/* ARRAY PARA AS OPÇÕES */
+	var zabbix_navigator = [];
+
+	/* WINBOX */
+	if(enableWinbox){
+		var winbox = {
+			label: t(textWinbox)
+		};
+		var winbox_url = new Curl('menupopup.php', false);
+		winbox_url.setArgument('application', 'Winbox');
+		winbox_url.setArgument('hostID', options.hostid);
+		winbox_url.setArgument('filter_set', '1');
+		winbox.url = winbox_url.getUrl();
+		zabbix_navigator.push(winbox);
+	}
+
+	/* NAVEGADOR WEB */
+	if(enableNavigator){
+		var navigator = {
+			label: t(textNavigator)
+		};
+		var navigator_url = new Curl('menupopup.php', false);
+		navigator_url.setArgument('application', 'Navigator');
+		navigator_url.setArgument('hostID', options.hostid);
+		navigator_url.setArgument('filter_set', '1');
+		navigator.url = navigator_url.getUrl();
+		zabbix_navigator.push(navigator);
+	}
+
+	/* PROTOCOLO SSH */
+	if(enableSSH){
+		var ssh = {
+			label: t(textSSH)
+		};
+		var ssh_url = new Curl('menupopup.php', false);
+		ssh_url.setArgument('application', 'SSH');
+		ssh_url.setArgument('hostID', options.hostid);
+		ssh_url.setArgument('filter_set', '1');
+		ssh.url = ssh_url.getUrl();
+		zabbix_navigator.push(ssh);
+	}
+
+	/* PROTOCOLO TELNET */
+	if(enableTelnet){
+		var telnet = {
+			label: t(textTelnet)
+		};
+		var telnet_url = new Curl('menupopup.php', false);
+		telnet_url.setArgument('application', 'Telnet');
+		telnet_url.setArgument('hostID', options.hostid);
+		telnet_url.setArgument('filter_set', '1');
+		telnet.url = telnet_url.getUrl();
+		zabbix_navigator.push(telnet);
+	}
+
+	/* PROTOCOLO RDP */
+	if(enableRDP){
+		var rdp = {
+			label: t(textRDP)
+		};
+		var rdp_url = new Curl('menupopup.php', false);
+		rdp_url.setArgument('application', 'RDP');
+		rdp_url.setArgument('hostID', options.hostid);
+		rdp_url.setArgument('filter_set', '1');
+		rdp.url = rdp_url.getUrl();
+		zabbix_navigator.push(rdp);
+	}
+
+	/* TESTE TRACEROUTE */
+	if(enableTraceroute){
+		var traceroute = {
+			label: t(textTraceroute)
+		};
+		var traceroute_url = new Curl('menupopup.php', false);
+		traceroute_url.setArgument('application', 'Traceroute');
+		traceroute_url.setArgument('hostID', options.hostid);
+		traceroute_url.setArgument('filter_set', '1');
+		traceroute.url = traceroute_url.getUrl();
+		zabbix_navigator.push(traceroute);
+	}
+
+	/* PROTOCOLO VNC */
+	if(enableVNC){
+		var vnc = {
+			label: t(textVNC)
+		};
+		var vnc_url = new Curl('menupopup.php', false);
+		vnc_url.setArgument('application', 'VNC');
+		vnc_url.setArgument('hostID', options.hostid);
+		vnc_url.setArgument('filter_set', '1');
+		vnc.url = vnc_url.getUrl();
+		zabbix_navigator.push(vnc);
+	}
+
+	/* COPIAR IP */
+	if(enableCopy){
+		var copy = {
+			label: t(textCopy)
+		};
+		var copy_url = new Curl('menupopup.php', false);
+		copy_url.setArgument('application', 'Copy');
+		copy_url.setArgument('hostID', options.hostid);
+		copy_url.setArgument('filter_set', '1');
+		copy.url = copy_url.getUrl();
+		zabbix_navigator.push(copy);
+	}
+
+	/* EXIBE UMA A SESSÃO NO MENU COM OS ITENS */
+	if (enableMenu) {
+		sections.push({
+			label: t('Zabbix Navigator - ' + version),
+			items: zabbix_navigator
+		});
+	}
+
+	/************************************** MENU CUSTOMIZADO **************************************/
 
 	return sections;
 }
