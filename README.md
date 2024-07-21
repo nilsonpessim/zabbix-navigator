@@ -1,4 +1,4 @@
-![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
+![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
 # :rocket: Zabbix Navigator
 
