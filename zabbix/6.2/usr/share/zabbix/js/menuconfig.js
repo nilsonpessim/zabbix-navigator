@@ -15,4 +15,4 @@ let enableCopy       = true; // Copiar IP
 let defaultLang = "Portugues";
 
 /* Version */
-let version = "V1.5.5";
+let version = "V1.5.6";
