@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.5.5](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.5)
+* [Download Versão 1.5.6](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.6)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -165,6 +165,7 @@ let defaultLang = "Portugues";
 --- 
 
 ## :golf: Changelog:
+
 * `Versão 1.5.6 - 14/08/2024`
   * Testado funcionalidade no Zabbix 7.0.2
   * Atualizado Winbox para versão 3.41

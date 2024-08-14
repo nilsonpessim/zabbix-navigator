@@ -5,15 +5,25 @@
 ---
 
 ### Versão dos Softwares:
-* Winbox64: `3.39`
+* Winbox64: `3.41`
 * WinMTR:   `0.92`
-* PuTTY:    `0.79`
-* VNC: `7.6.0`
+* PuTTY:    `0.81`
+* VNC: `7.21.1`
 
 ---
 
 ## :golf: Changelog:
 
+* `Versão 1.5.6 - 14/08/2024`
+  * Testado funcionalidade no Zabbix 7.0.2
+  * Atualizado Winbox para versão 3.41
+  * Atualizado Putty para a versão 0.81
+  * Atualizado VNC para a versão 7.21.1
+---
+* `Versão 1.5.5 - 11/09/2023`
+  * Reformulado a estrutura e posição dos itens do Menu
+    * O conteúdo poderá apresentar cortado, dependendo da resolução do monitor.
+---
 * `Versão 1.5.4 - 31/08/2023`
   * Adicionado Suporte a versão 7.0 PRE-RELEASE
   * Adicionado Opção para acesso via Microsoft RDP - `(@andersonmarin)`
