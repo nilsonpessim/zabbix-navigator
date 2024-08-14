@@ -36,7 +36,7 @@
 
 ## :heavy_check_mark: Compatibilidade - Testado nas versões:
 
-* :heavy_check_mark: Zabbix Server 7.0 PRE-RELEASE
+* :heavy_check_mark: Zabbix Server 7.0.2
 * :heavy_check_mark: Zabbix Server 6.4 LTS
 * :heavy_check_mark: Zabbix Server 6.0 LTS
 * :heavy_check_mark: Zabbix Server 5.0 LTS
