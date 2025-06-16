@@ -1,6 +1,6 @@
 ![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
-# :rocket: Zabbix Navigator
+# :rocket: Zabbix Navigator 1.5.7
 
 * [Arquivos Zabbix](#cyclone-arquivos-necessários-no-zabbix)
 * [Arquivos Windows](#computer-arquivos-necessários-no-windows)
@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.5.6](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.6)
+* [Download Versão 1.5.7](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.5.7)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -24,7 +24,7 @@
 
 ---
 
-## :wrench: Funcionalidades
+## :wrench: Funcionalidades:
 * :large_blue_circle: Acessar hosts MikroTik com Winbox.
 * :large_blue_circle: Acessar hosts via SSH com Putty.
 * :large_blue_circle: Acessar hosts via Telnet com Putty.
@@ -36,6 +36,7 @@
 
 ## :heavy_check_mark: Compatibilidade - Testado nas versões:
 
+* :heavy_check_mark: Zabbix Server 7.2
 * :heavy_check_mark: Zabbix Server 7.0.2
 * :heavy_check_mark: Zabbix Server 6.4 LTS
 * :heavy_check_mark: Zabbix Server 6.0 LTS
@@ -45,28 +46,57 @@
 * :cd: Ubuntu 18.04, 20.04, 22.04 | CentOS 8
 
 ---
-#### EM CASO DE DÚVIDAS E CORREÇÕES DE ERROS NO PLUGIN, POR FAVOR, ABRE UM ISSUE. TEREMOS O PRAZER EM REALIZAR UMA AVALIAÇÃO E CORRIGI-LOS.
+#### EM CASO DE DÚVIDAS E CORREÇÕES DE ERROS NO PLUGIN, POR FAVOR, ABRA UM ISSUE. TEREMOS O PRAZER EM REALIZAR UMA AVALIAÇÃO E CORRIGI-LOS.
 ---
 
 ![Menu Mapa](https://github.com/nilsonpessim/zabbix-navigator/assets/6774062/fa05430e-a44e-4b3e-87b2-13d4d2805fac)
 
 ## :cyclone: Arquivos necessários no Zabbix
-* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server, pois o mesmo será substituído pela versão customizada.
+
+### IMPORTANTE!!!
+
+Na versão 7.2 do Zabbix, o diretório da interface web mudou de ```/usr/share/zabbix``` para ```/usr/share/zabbix/ui```.
+
+---
+
+* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server (ou */usr/share/zabbix/ui/js* para versão 7.2), pois o mesmo será substituído pela versão customizada.
 * Os arquivos que serão enviados para o servidor são:
 ```
+Zabbix 7.2:
+/usr/share/zabbix/ui/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
+/usr/share/zabbix/ui/js/menupopup.js -> Arquivo contendo o Menu customizado.
+
+Até Zabbix 7.0:
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
 * A partir da versão 1.3.1 do Zabbix Navigator, contamos com novos arquivos .js para configurações e controle de idiomas, sendo eles:
 ```
+Zabbix 7.2:
+/usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
+/usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
+
+Até Zabbix 7.0:
 /usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
 /usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
 * A partir da versão 1.5.1 do Zabbix Navigator, contamos com o diretório `plugins`, onde são armazenados os arquivos complementares do menu.
 ```
+Zabbix 7.2:
+/usr/share/zabbix/ui/plugins
+
+Até Zabbix 7.0:
 /usr/share/zabbix/plugins
 ```
-* Envie os arquivos presentes no diretório `zabbix/*/usr/share/zabbix/` para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
+* Envie os arquivos presentes no diretório, para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
+  
+``` 
+Zabbix 7.2:
+zabbix/*/usr/share/zabbix/ui/
+
+Até Zabbix 7.0:
+zabbix/*/usr/share/zabbix/
+``` 
 
 * Reinicie o serviço do Zabbix Server:
 ```
@@ -156,16 +186,22 @@ let defaultLang = "Portugues";
 ```
 ---
 
-### Versão dos Softwares:
-* Winbox64: `3.41`
+### Versão dos Softwares - 1.5.7:
+* Winbox64: `3.42`
 * WinMTR:   `0.92`
-* PuTTY:    `0.81`
-* VNC: `7.21.1`
+* PuTTY64:    `0.83`
+* VNC64: `7.31.1`
 
 --- 
 
 ## :golf: Changelog:
 
+* `Versão 1.5.7 - 15/06/2025`
+  * Testado funcionalidade no Zabbix 7.2.3
+  * Atualizado Winbox64 para versão 3.42
+  * Atualizado Putty 0.81 para Putty64 0.83
+  * Atualizado VNC 7.21.1 para VNC64 7.31.1
+---
 * `Versão 1.5.6 - 14/08/2024`
   * Testado funcionalidade no Zabbix 7.0.2
   * Atualizado Winbox para versão 3.41
@@ -248,10 +284,3 @@ let defaultLang = "Portugues";
 >Isso me incentiva a trazer mais materiais como este e muitos outros de redes e tecnologia.
 > 
 >## ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCWN6suTq5sZGqnSLos992Yw?style=social)
-
-
-## :blue_book: Referências e Agradecimentos
-> [Zabbix Conference - Jorge Fernando](https://pt.slideshare.net/JorgeFernandoMatsudo/zabbix-conference-2018v2-95430345)
-
-## :iphone: Contato e Informações
-[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5537999351046)](https://api.whatsapp.com/send?phone=5537999351046)

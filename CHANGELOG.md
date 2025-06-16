@@ -1,19 +1,25 @@
-![TechLabs](https://techlabs.net.br/wp-content/uploads/2021/09/logo_blog.png)
+![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
-# :rocket: Zabbix Navigator
+# :rocket: Zabbix Navigator 1.5.7
 
 ---
 
-### Versão dos Softwares:
-* Winbox64: `3.41`
+### Versão dos Softwares - 1.5.7:
+* Winbox64: `3.42`
 * WinMTR:   `0.92`
-* PuTTY:    `0.81`
-* VNC: `7.21.1`
+* PuTTY64:    `0.83`
+* VNC64: `7.31.1`
 
 ---
 
 ## :golf: Changelog:
 
+* `Versão 1.5.7 - 15/06/2025`
+  * Testado funcionalidade no Zabbix 7.2.3
+  * Atualizado Winbox64 para versão 3.42
+  * Atualizado Putty 0.81 para Putty64 0.83
+  * Atualizado VNC 7.21.1 para VNC64 7.31.1
+---
 * `Versão 1.5.6 - 14/08/2024`
   * Testado funcionalidade no Zabbix 7.0.2
   * Atualizado Winbox para versão 3.41
@@ -96,6 +102,3 @@
 >Isso me incentiva a trazer mais materiais como este e muitos outros de redes e tecnologia.
 > 
 >## ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCWN6suTq5sZGqnSLos992Yw?style=social)
-
-## :iphone: Contato e Informações
-[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5537999351046)](https://api.whatsapp.com/send?phone=5537999351046)
