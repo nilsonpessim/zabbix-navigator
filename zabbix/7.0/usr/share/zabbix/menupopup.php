@@ -1,7 +1,7 @@
 <?php
 
 /* Author: Nilson Pessim <nilson@techlabs.net.br>
- * Testado no Zabbix Versão 6.4
+ * Testado no Zabbix Versão 7.0
  * Youtube Channel: https://youtube.com/techlabs94?sub_confirmation=1 */
 
 // Erro 500 ocasionado pela versão do PHP 8

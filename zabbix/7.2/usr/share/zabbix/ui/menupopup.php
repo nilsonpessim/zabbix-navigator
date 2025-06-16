@@ -1,25 +1,15 @@
 <?php
 
-/* Author: Nilson Pessim <nilson@techlabs.net.br>
- * Youtube Channel: https://youtube.com/techlabs94?sub_confirmation=1 */
+// Author: Nilson Pessim <nilson@techlabs.net.br>
+// Youtube Channel: https://youtube.com/techlabs94?sub_confirmation=1 
 
 // Erro 500 ocasionado pela versão do PHP 8
 if (PHP_VERSION_ID >= 80000){
     define('IMAGE_FORMAT_PNG', 'PNG');
 }
 
-/* Arquivo que contém as variáveis de ambiente do Zabbix */
-//$conf = __DIR__ . "/conf/zabbix.conf.php";
-$conf = "/etc/zabbix/web/zabbix.conf.php";
-
-// Ver se arquivo existe
-if (!file_exists($conf)) {
-    echo "Erro ao Processar o Arquivo de Configurações";
-    exit;
-}
-
 // Inclui o arquivo de configuração
-require_once $conf;
+require_once "/etc/zabbix/web/zabbix.conf.php";
 
 /* Variáveis $_GET para receber os parámetros vindo da URL */
 $application  = (isset($_GET['application'])) ? $_GET['application'] : '*';

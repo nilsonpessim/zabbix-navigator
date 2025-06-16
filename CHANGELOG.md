@@ -1,24 +1,23 @@
 ![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
-# :rocket: Zabbix Navigator 1.5.7
+# :rocket: Zabbix Navigator 1.6.0
 
 ---
 
-### Versão dos Softwares - 1.5.7 - Zabbix 7.2:
+### Versão dos Softwares
 * Winbox64: `3.42`
 * WinMTR:   `0.92`
 * PuTTY64:    `0.83`
 * VNC64: `7.31.1`
-
 ---
 
 ## :golf: Changelog:
 
-* `Versão 1.5.7 - 15/06/2025`
+* `Versão 1.6.0 - 15/06/2025`
   * Testado funcionalidade no Zabbix 7.2.3
-  * Atualizado Winbox64 para versão 3.42 para o Zabbix 7.2
-  * Atualizado Putty 0.81 para Putty64 0.83 para o Zabbix 7.2
-  * Atualizado VNC 7.21.1 para VNC64 7.31.1 para o Zabbix 7.2
+  * Atualizado Winbox64 para versão 3.42
+  * Atualizado Putty 0.81 para PuTTY64 0.83
+  * Atualizado VNC 7.21.1 para VNC64 7.31.1
 ---
 * `Versão 1.5.6 - 14/08/2024`
   * Testado funcionalidade no Zabbix 7.0.2
