@@ -348,16 +348,16 @@ function getMenuPopupHost(options, trigger_element) {
 	}
 
 	/* NAVEGADOR WEB */
-	if(enableNavigator){
-		var navigator = {
-			label: t(textNavigator)
+	if(enableWeb){
+		var web = {
+			label: t(textWeb)
 		};
-		var navigator_url = new Curl('menupopup.php', false);
-		navigator_url.setArgument('application', 'Navigator');
-		navigator_url.setArgument('hostID', options.hostid);
-		navigator_url.setArgument('filter_set', '1');
-		navigator.url = navigator_url.getUrl();
-		zabbix_navigator.push(navigator);
+		var web_url = new Curl('menupopup.php', false);
+		web_url.setArgument('application', 'Web');
+		web_url.setArgument('hostID', options.hostid);
+		web_url.setArgument('filter_set', '1');
+		web.url = web_url.getUrl();
+		zabbix_navigator.push(web);
 	}
 
 	/* PROTOCOLO SSH */

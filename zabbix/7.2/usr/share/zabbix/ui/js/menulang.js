@@ -2,7 +2,7 @@ let menuLanguage = [
     {
         name : "Portugues",
         winbox : "Abrir com Winbox",
-        navigator : "Abrir com Navegador",
+        web : "Abrir com Navegador",
         ssh : "Abrir com SSH",
         telnet : "Abrir com Telnet",
         rdp : "Abrir com RDP",
@@ -13,7 +13,7 @@ let menuLanguage = [
     {
         name : "English",
         winbox : "Open with Winbox",
-        navigator : "Open with Browser",
+        web : "Open with Browser",
         ssh : "Open with SSH",
         telnet : "Open with Telnet",
         rdp : "Open with RDP",
@@ -24,7 +24,7 @@ let menuLanguage = [
     {
         name : "Espanol",
         winbox : "Abrir con Winbox",
-        navigator : "Abrir con Navegador",
+        web : "Abrir con Navegador",
         ssh : "Abrir con SSH",
         telnet : "Abrir con Telnet",
         rdp : "Abrir con RDP",
@@ -40,7 +40,7 @@ for (i = 0; i < menuLanguage.length; i++){
 
     if (menuLanguage[i].name == defaultLang){
         textWinbox     = menuLanguage[i].winbox;
-        textNavigator  = menuLanguage[i].navigator;
+        textWeb        = menuLanguage[i].web;
         textSSH        = menuLanguage[i].ssh;
         textTelnet     = menuLanguage[i].telnet;
         textRDP        = menuLanguage[i].rdp;

@@ -6,7 +6,7 @@ let enableMenu = true;
 
 /* Habilita/Desbilita as opcoes de forma individual no Menu: true, false */
 let enableWinbox     = true; // MikroTik Winbox
-let enableNavigator  = true; // Navegador Web
+let enableWeb        = true; // Navegador Web
 let enableSSH        = true; // Protocolo SSH
 let enableTelnet     = true; // Protocolo Telnet
 let enableRDP        = true; // Protocolo RDP

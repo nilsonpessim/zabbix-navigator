@@ -1,6 +1,6 @@
 ![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
-# :rocket: Zabbix Navigator 1.6.0
+# :rocket: Zabbix Navigator 1.6.1
 
 * [Arquivos Zabbix](#cyclone-arquivos-necessários-no-zabbix)
 * [Arquivos Windows](#computer-arquivos-necessários-no-windows)
@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.6.0](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.6.0)
+* [Download Versão 1.6.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.6.1)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -35,7 +35,6 @@
 * :large_blue_circle: Copiar IP do host para área de trabalho.
 
 ## :heavy_check_mark: Compatibilidade - Testado nas versões:
-
 * :heavy_check_mark: Zabbix Server 7.2
 * :heavy_check_mark: Zabbix Server 7.0.2
 * :heavy_check_mark: Zabbix Server 6.4 LTS
@@ -73,6 +72,18 @@ Até Zabbix 7.0:
 ---
 ### :large_blue_circle: NOTAS DE ATUALIZAÇÃO!!!
 
+16/06/2025:
+* Agora é possível definir portas de serviços para um host, através do campo etiquetas (Testado apenas no Zabbix 7.2)
+* Opções disponíveis:
+  
+```
+port_rdp, port_ssh, port_telnet, port_vnc, port_web, port_winbox
+```
+
+![Etiquetas](assets/img_4.png)
+
+---
+
 16/12/2022:
 * A partir da versão 1.5.1 do Zabbix Navigator, contamos com o diretório `plugins`, onde são armazenados os arquivos complementares do menu.
 ```
@@ -82,6 +93,8 @@ Zabbix 7.2:
 Até Zabbix 7.0:
 /usr/share/zabbix/plugins
 ```
+
+---
 
 30/09/2022:
 * A partir da versão 1.3.1 do Zabbix Navigator, contamos com novos arquivos .js para configurações e controle de idiomas, sendo eles:
@@ -205,6 +218,9 @@ let enableCopy       = true;
 
 ## :golf: Changelog:
 
+* `Versão 1.6.1 - 16/06/2025`
+  * Opção de portas customizadas através de etiquetas do host.
+---
 * `Versão 1.6.0 - 15/06/2025`
   * Testado funcionalidade no Zabbix 7.2.3
   * Atualizado Winbox64 para versão 3.42
