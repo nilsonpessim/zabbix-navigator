@@ -1,6 +1,6 @@
 ![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
-# :rocket: Zabbix Navigator 1.6.1
+# :rocket: Zabbix Navigator 1.6.0
 
 * [Arquivos Zabbix](#cyclone-arquivos-necessários-no-zabbix)
 * [Arquivos Windows](#computer-arquivos-necessários-no-windows)
@@ -12,7 +12,7 @@
 * [Dê seu Apoio](#sparkling_heart-nos-ajude-a-crescer)
 
 ---
-* [Download Versão 1.6.1](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.6.1)
+* [Download Versão 1.6.0](https://github.com/nilsonpessim/zabbix-navigator/releases/tag/V1.6.0)
 * [Todos as Versões](https://github.com/nilsonpessim/zabbix-navigator/releases)
 
 ---
@@ -73,12 +73,20 @@ Até Zabbix 7.0:
 ### :large_blue_circle: NOTAS DE ATUALIZAÇÃO!!!
 
 16/06/2025:
-* Agora é possível definir portas de serviços para um host, através do campo etiquetas (Testado apenas no Zabbix 7.2)
-* Opções disponíveis:
+* A partir da versão 1.6.0 do Zabbix Navigator, é possível definir portas de serviços para um host, através do campo etiquetas *(Disponível apenas no Zabbix 7.2)*. Caso a etiqueta não for definida, o sistema irá usar a porta padrão daquele serviço.
+
+* Serviços disponíveis para customização:
+
+| Serviço | Etiqueta |
+|--------|----------|
+| RDP    | port_rdp |
+| SSH    | port_ssh |
+| TELNET | port_telnet|
+| VNC    | port_vnc |
+| WEB    | port_web |
+| WINBOX | port_winbox|
   
-```
-port_rdp, port_ssh, port_telnet, port_vnc, port_web, port_winbox
-```
+* Exemplo de Utilização:
 
 ![Etiquetas](assets/img_4.png)
 
@@ -87,10 +95,6 @@ port_rdp, port_ssh, port_telnet, port_vnc, port_web, port_winbox
 16/12/2022:
 * A partir da versão 1.5.1 do Zabbix Navigator, contamos com o diretório `plugins`, onde são armazenados os arquivos complementares do menu.
 ```
-Zabbix 7.2:
-/usr/share/zabbix/ui/plugins
-
-Até Zabbix 7.0:
 /usr/share/zabbix/plugins
 ```
 
@@ -99,11 +103,6 @@ Até Zabbix 7.0:
 30/09/2022:
 * A partir da versão 1.3.1 do Zabbix Navigator, contamos com novos arquivos .js para configurações e controle de idiomas, sendo eles:
 ```
-Zabbix 7.2:
-/usr/share/zabbix/ui/js/menuconfig.js -> Arquivo de Configuração do Menu.
-/usr/share/zabbix/ui/js/menulang.js   -> Arquivo de Idiomas do Menu.
-
-Até Zabbix 7.0:
 /usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
 /usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
@@ -218,11 +217,9 @@ let enableCopy       = true;
 
 ## :golf: Changelog:
 
-* `Versão 1.6.1 - 16/06/2025`
-  * Opção de portas customizadas através de etiquetas do host.
----
-* `Versão 1.6.0 - 15/06/2025`
+* `Versão 1.6.0 - 16/06/2025`
   * Testado funcionalidade no Zabbix 7.2.3
+  * Opção de porta customizada através de etiquetas do host.
   * Atualizado Winbox64 para versão 3.42
   * Atualizado Putty 0.81 para PuTTY64 0.83
   * Atualizado VNC 7.21.1 para VNC64 7.31.1

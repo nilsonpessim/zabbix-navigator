@@ -1,6 +1,6 @@
 ![LOGO-TECHLABS](https://github.com/nilsonpessim/projeto-wifi/assets/6774062/a8859e6f-18ae-45f8-b119-c572429bb83d)
 
-# :rocket: Zabbix Navigator 1.6.1
+# :rocket: Zabbix Navigator 1.6.0
 
 ---
 
@@ -12,12 +12,11 @@
 ---
 
 ## :golf: Changelog:
-
-* `Versão 1.6.1 - 16/06/2025`
-  * Opção de portas customizadas através de etiquetas do host.
+  
 ---
-* `Versão 1.6.0 - 15/06/2025`
+* `Versão 1.6.0 - 16/06/2025`
   * Testado funcionalidade no Zabbix 7.2.3
+  * Opção de porta customizada através de etiquetas do host.
   * Atualizado Winbox64 para versão 3.42
   * Atualizado Putty 0.81 para PuTTY64 0.83
   * Atualizado VNC 7.21.1 para VNC64 7.31.1
