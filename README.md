@@ -73,8 +73,8 @@ Até Zabbix 7.0:
 * A partir da versão 1.3.1 do Zabbix Navigator, contamos com novos arquivos .js para configurações e controle de idiomas, sendo eles:
 ```
 Zabbix 7.2:
-/usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
-/usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
+/usr/share/zabbix/ui/js/menuconfig.js -> Arquivo de Configuração do Menu.
+/usr/share/zabbix/ui/js/menulang.js   -> Arquivo de Idiomas do Menu.
 
 Até Zabbix 7.0:
 /usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
