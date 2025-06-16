@@ -53,7 +53,7 @@
 
 ## :cyclone: Arquivos necessários no Zabbix
 
-### IMPORTANTE!!!
+### :large_blue_circle: IMPORTANTE!!!
 
 Na versão 7.2 do Zabbix, o diretório da interface web mudou de ```/usr/share/zabbix``` para ```/usr/share/zabbix/ui```.
 
@@ -70,6 +70,20 @@ Até Zabbix 7.0:
 /usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
 /usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
 ```
+---
+### :large_blue_circle: NOTAS DE ATUALIZAÇÃO!!!
+
+16/12/2022:
+* A partir da versão 1.5.1 do Zabbix Navigator, contamos com o diretório `plugins`, onde são armazenados os arquivos complementares do menu.
+```
+Zabbix 7.2:
+/usr/share/zabbix/ui/plugins
+
+Até Zabbix 7.0:
+/usr/share/zabbix/plugins
+```
+
+30/09/2022:
 * A partir da versão 1.3.1 do Zabbix Navigator, contamos com novos arquivos .js para configurações e controle de idiomas, sendo eles:
 ```
 Zabbix 7.2:
@@ -80,14 +94,7 @@ Até Zabbix 7.0:
 /usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
 /usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
-* A partir da versão 1.5.1 do Zabbix Navigator, contamos com o diretório `plugins`, onde são armazenados os arquivos complementares do menu.
-```
-Zabbix 7.2:
-/usr/share/zabbix/ui/plugins
 
-Até Zabbix 7.0:
-/usr/share/zabbix/plugins
-```
 * Envie os arquivos presentes no diretório, para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
   
 ``` 
@@ -172,6 +179,8 @@ O diretório ficará da seguinte forma -> C:/zabbix/
   * Habilitar/Desabilitar as opções individuais.
   * Alterar idioma de exibição do Menu.
 ```
+let defaultLang = "Portugues";
+
 let enableMenu = true;
 
 let enableWinbox     = true;
@@ -181,8 +190,6 @@ let enableTelnet     = true;
 let enableTraceroute = true;
 let enableVNC        = true;
 let enableCopy       = true;
-
-let defaultLang = "Portugues";
 ```
 ---
 
