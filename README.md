@@ -95,6 +95,8 @@ Até Zabbix 7.0:
 /usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
 
+---
+
 * Envie os arquivos presentes no diretório, para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
   
 ``` 
