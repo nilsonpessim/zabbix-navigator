@@ -50,25 +50,6 @@
 
 ![Menu Mapa](https://github.com/nilsonpessim/zabbix-navigator/assets/6774062/fa05430e-a44e-4b3e-87b2-13d4d2805fac)
 
-## :cyclone: Arquivos necessários no Zabbix
-
-### :large_blue_circle: IMPORTANTE!!!
-
-Na versão 7.2 do Zabbix, o diretório da interface web mudou de ```/usr/share/zabbix``` para ```/usr/share/zabbix/ui```.
-
----
-
-* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server (ou */usr/share/zabbix/ui/js* para versão 7.2), pois o mesmo será substituído pela versão customizada.
-* Os arquivos que serão enviados para o servidor são:
-```
-Zabbix 7.2:
-/usr/share/zabbix/ui/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
-/usr/share/zabbix/ui/js/menupopup.js -> Arquivo contendo o Menu customizado.
-
-Até Zabbix 7.0:
-/usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
-/usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
-```
 ---
 ### :large_blue_circle: NOTAS DE ATUALIZAÇÃO!!!
 
@@ -106,7 +87,27 @@ Até Zabbix 7.0:
 /usr/share/zabbix/js/menuconfig.js -> Arquivo de Configuração do Menu.
 /usr/share/zabbix/js/menulang.js   -> Arquivo de Idiomas do Menu.
 ```
+---
 
+## :cyclone: Arquivos necessários no Zabbix
+
+### :large_blue_circle: IMPORTANTE!!!
+
+Na versão 7.2 do Zabbix, o diretório da interface web mudou de ```/usr/share/zabbix``` para ```/usr/share/zabbix/ui```.
+
+---
+
+* Antes de enviar os arquivos para o servidor, `é importante realizar o backup do arquivo menupopup.js`, presente na pasta /usr/share/zabbix/js do seu zabbix server (ou */usr/share/zabbix/ui/js* para versão 7.2), pois o mesmo será substituído pela versão customizada.
+* Os arquivos que serão enviados para o servidor são:
+```
+Zabbix 7.2:
+/usr/share/zabbix/ui/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
+/usr/share/zabbix/ui/js/menupopup.js -> Arquivo contendo o Menu customizado.
+
+Até Zabbix 7.0:
+/usr/share/zabbix/menupopup.php   -> Arquivo de processamento das opções customizadas no Menu.
+/usr/share/zabbix/js/menupopup.js -> Arquivo contendo o Menu customizado.
+```
 ---
 
 * Envie os arquivos presentes no diretório, para o servidor Zabbix via FTP, RESPEITANDO OS DIRETÓRIOS. *( * VERSÃO DO SEU ZABBIX)*.
