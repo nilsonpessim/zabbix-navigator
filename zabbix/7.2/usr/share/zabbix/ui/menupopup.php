@@ -32,7 +32,8 @@ class menupopup {
     // Retorna as portas configuradas na Etiqueta
     private function getPort($PDO)
     {
-        $tag = 'port_' . strtolower($this->application);
+        $application = strtolower($this->application);
+        $tag = 'port_' . $application;
         $sql = "SELECT value FROM host_tag WHERE hostid = :hostid AND tag = :tag LIMIT 1";
         $stmt = $PDO->prepare($sql);
         $stmt->execute(['hostid' => $this->hostID, 'tag' => $tag]);
@@ -48,7 +49,7 @@ class menupopup {
             'vnc'    => 5900,
         ];
 
-        return $result['value'] ?? $defaultPorts[$this->application] ?? null;
+        return $result['value'] ?? $defaultPorts[$application] ?? null;
     }
 
     // Executa a Aplicação
