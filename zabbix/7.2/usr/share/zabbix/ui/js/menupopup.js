@@ -104,8 +104,26 @@ function getMenuPopupHistory(options) {
  */
 
 /* Import files TechLabs ****************************/
-$.getScript("js/menuconfig.js");
-$.getScript("js/menulang.js");
+function loadScript(url, callback) {
+	const script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = url;
+
+	script.onload = callback;
+	script.onerror = function () {
+		console.error("Erro ao carregar script:", url);
+	};
+
+	document.head.appendChild(script);
+}
+
+if (typeof defaultLang === 'undefined') {
+    loadScript("js/menuconfig.js", function () {
+        if (typeof menuLanguage === 'undefined') {
+            loadScript("js/menulang.js", function () {});
+        }
+    });
+}
 /* Import files TechLabs ****************************/
 
 function getMenuPopupHost(options, trigger_element) {
@@ -434,7 +452,7 @@ function getMenuPopupHost(options, trigger_element) {
 	/* EXIBE UMA A SESSÃO NO MENU COM OS ITENS */
 	if (enableMenu) {
 		sections.push({
-			label: t('Zabbix Navigator - V1.6.0'),
+			label: t('Zabbix Navigator - V'+versionNavigator),
 			items: zabbix_navigator
 		});
 	}

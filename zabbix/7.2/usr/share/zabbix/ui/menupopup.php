@@ -130,6 +130,11 @@ class menupopup {
         $host = $PDO->query("SELECT ip FROM interface WHERE hostid={$this->hostID} LIMIT 1")->fetch(PDO::FETCH_ASSOC);
         $port = self::getPort($PDO);
 
+        if ($this->application === 'Copy') {
+            self::openApplication($host['ip']);
+            return;
+        }
+
         /* Condição para validar se o host existe dentro do Banco de Dados */
         if (!$port || !$host['ip']) {
             header("Location: {$this->youtube}");

@@ -13,3 +13,6 @@ let enableRDP        = true; // Protocolo RDP
 let enableTraceroute = true; // Teste de Traceroute
 let enableVNC        = true; // Protocolo VNC
 let enableCopy       = true; // Copiar IP
+
+/* Versão do Plugin */
+let versionNavigator = "1.6.0";
